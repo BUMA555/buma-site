@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://buma555.github.io/buma-site/sitemap.xml

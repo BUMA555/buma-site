@@ -887,6 +887,74 @@ img { display: block; max-width: 100%; }
 .dashboard-lines i:nth-child(2) { width: 100%; }
 .dashboard-lines i:nth-child(3) { width: 62%; }
 
+.forum-grid {
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  display: grid;
+  gap: 24px;
+}
+.forum-stage {
+  position: relative;
+  padding: 22px;
+  border-radius: 34px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: radial-gradient(circle at 82% 12%, rgba(129,228,255,0.16), transparent 22%), linear-gradient(180deg, rgba(20, 29, 55, 0.96), rgba(10, 15, 29, 0.88));
+}
+.forum-board {
+  display: grid;
+  gap: 16px;
+}
+.forum-thread {
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+}
+.forum-thread.hot {
+  background: radial-gradient(circle at 86% 18%, rgba(141,116,255,0.18), transparent 24%), rgba(255,255,255,0.05);
+}
+.thread-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 12px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--muted-strong);
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+}
+.forum-thread strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 22px;
+  line-height: 1.22;
+}
+.forum-thread p {
+  margin: 0;
+  color: var(--muted);
+}
+.forum-thread.mini {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.forum-thread.mini span,
+.forum-side-tags span {
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+  color: var(--muted-strong);
+  font-size: 12px;
+}
+.forum-side-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
 .highlight-wrap {
   grid-template-columns: 0.82fr 1.18fr;
   align-items: start;
@@ -1133,6 +1201,7 @@ img { display: block; max-width: 100%; }
   .hero-inner,
   .trust-strip-inner,
   .showcase-grid,
+  .forum-grid,
   .highlight-wrap,
   .proof-wrap,
   .scenes-grid,

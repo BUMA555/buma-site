@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BUMA｜智能效率品牌官网</title>
+  <title>BUMA｜一个人，也能拥有顺手的智能搭档</title>
   <meta name="description" content="BUMA 是一个面向个人与团队的智能效率品牌，用更轻盈、更聪明的方式，把复杂工作变简单。" />
-  <meta property="og:title" content="BUMA｜智能效率品牌官网" />
-  <meta property="og:description" content="一个人，也能拥有顺手的智能搭档。" />
+  <meta property="og:title" content="BUMA｜一个人，也能拥有顺手的智能搭档" />
+  <meta property="og:description" content="深色轻科技、品牌感与产品感统一的 BUMA 官网首页。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://buma555.github.io/buma-site/" />
   <link rel="canonical" href="https://buma555.github.io/buma-site/" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="noise"></div>
   <div class="page-shell">
     <header class="topbar">
       <div class="container nav">
@@ -24,13 +25,14 @@
           <a href="#product">产品感受</a>
           <a href="#ability">核心能力</a>
           <a href="#scenes">使用场景</a>
-          <a href="#compare">为什么选 BUMA</a>
+          <a href="#pricing">版本方案</a>
+          <a href="#reviews">口碑反馈</a>
         </nav>
 
         <div class="nav-actions">
           <div class="contact-pill">
             <span>山东临沂</span>
-            <span>微信 `bm8150`</span>
+            <span>微信 bm8150</span>
           </div>
           <a class="nav-cta" href="contact.html">预约体验</a>
         </div>
@@ -38,9 +40,10 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero reveal-on-scroll is-visible">
         <div class="hero-glow hero-glow-left"></div>
         <div class="hero-glow hero-glow-right"></div>
+        <div class="grid-lines"></div>
         <div class="container hero-inner">
           <div class="hero-copy">
             <div class="eyebrow">
@@ -50,12 +53,13 @@
             <div class="hero-badge-row">
               <span class="mini-pill">可爱一点</span>
               <span class="mini-pill">聪明很多</span>
-              <span class="mini-pill">可信且顺手</span>
+              <span class="mini-pill">顺手且可信</span>
             </div>
             <h1>一个人，<br />也能拥有<span>顺手的智能搭档</span></h1>
             <p>
               BUMA 是一个面向个人与团队的智能效率品牌。
-              它不把页面做成生硬的 AI 模板，而是把产品感、品牌感和使用欲望一起做出来。
+              它把产品感、视觉统一性和轻量智能体验放在同一套设计语言里，
+              让品牌首页不再像开发者模板，而像一个真正值得买单的数字产品。
             </p>
             <div class="button-row">
               <a class="btn-primary" href="contact.html">现在开始体验</a>
@@ -63,26 +67,31 @@
             </div>
             <div class="hero-trust-row">
               <div>
-                <strong>品牌感</strong>
-                <span>不是模板站，而是可记住的产品门面</span>
+                <strong>品牌感先到位</strong>
+                <span>不是信息堆积，而是第一眼就有记忆点和气质感。</span>
               </div>
               <div>
-                <strong>轻科技</strong>
-                <span>深色基调里保留温度、呼吸感和友好度</span>
+                <strong>轻科技不冰冷</strong>
+                <span>深色、蓝紫、柔光、留白与可爱细节一起成立。</span>
               </div>
             </div>
           </div>
 
-          <div class="hero-stage">
+          <div class="hero-stage" id="hero-stage">
             <div class="stage-orbit orbit-a"></div>
             <div class="stage-orbit orbit-b"></div>
-            <div class="hero-panel main-panel">
+            <div class="stage-orbit orbit-c"></div>
+
+            <div class="hero-panel main-panel parallax-card" data-depth="14">
               <div class="panel-top">
                 <span class="panel-tag">BUMA Core</span>
-                <span class="status-pill">Online</span>
+                <span class="status-pill">在线运转</span>
               </div>
-              <div class="hero-logo-bubble">
+              <div class="hero-logo-bubble mascot-core">
                 <img src="assets-buma-logo.svg" alt="BUMA" />
+                <span class="mascot-eye eye-left"></span>
+                <span class="mascot-eye eye-right"></span>
+                <span class="mascot-smile"></span>
               </div>
               <h2>轻一点，更高级一点。</h2>
               <p>把复杂流程藏在背后，把顺手体验放到前面。</p>
@@ -93,42 +102,73 @@
                 </div>
                 <div>
                   <strong>02</strong>
-                  <span>效率入口更直接</span>
+                  <span>入口更清楚</span>
                 </div>
                 <div>
                   <strong>03</strong>
-                  <span>页面节奏更成熟</span>
+                  <span>页面更值钱</span>
                 </div>
               </div>
             </div>
-            <div class="float-card float-card-a">
+
+            <div class="float-card float-card-a parallax-card" data-depth="10">
               <span>智能工作流</span>
               <strong>更顺手的协作感</strong>
             </div>
-            <div class="float-card float-card-b">
+            <div class="float-card float-card-b parallax-card" data-depth="8">
               <span>品牌体验</span>
               <strong>第一眼就想继续看</strong>
             </div>
-            <div class="float-card float-card-c">
+            <div class="float-card float-card-c parallax-card" data-depth="12">
               <span>统一设计语言</span>
               <strong>圆角、发光、留白同频</strong>
             </div>
+            <div class="hero-spark spark-a"></div>
+            <div class="hero-spark spark-b"></div>
+            <div class="hero-spark spark-c"></div>
           </div>
         </div>
       </section>
 
-      <section class="section product-showcase" id="product">
+      <section class="section trust-strip reveal-on-scroll" id="trust">
+        <div class="container trust-strip-inner">
+          <div class="trust-copy">
+            <div class="eyebrow soft">Trust & Proof</div>
+            <h2>让用户愿意继续聊，<br />先让页面看起来值得信。</h2>
+          </div>
+          <div class="trust-metrics">
+            <article class="metric-card">
+              <strong>01</strong>
+              <span>统一品牌风格</span>
+              <p>从导航到卡片到 CTA，不再像东拼西凑的页面组件。</p>
+            </article>
+            <article class="metric-card">
+              <strong>10s</strong>
+              <span>首屏理解时间</span>
+              <p>用户能更快明白品牌是谁、做什么、下一步点哪里。</p>
+            </article>
+            <article class="metric-card accent">
+              <strong>100%</strong>
+              <span>中文内容表达</span>
+              <p>全站中文文案统一，让品牌更适合直接展示和沟通。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product-showcase reveal-on-scroll" id="product">
         <div class="container showcase-grid">
           <div class="section-heading left-align">
             <div class="eyebrow soft">Product Showcase</div>
             <h2>它先让你觉得顺眼，<br />然后才让你觉得好用。</h2>
             <p>
-              这不是“一个标题 + 三张卡片”的普通 AI 落地页，
-              而是通过演示面板、状态标签、柔和动效和信息层级，把 BUMA 做成一个真正像产品的品牌首页。
+              BUMA 不做那种“一个标题 + 三张卡片”的普通 AI 页面。
+              这一屏通过演示窗口、状态标签、内容层次和轻微动效，
+              先把产品气质立住，再把能力往外讲。
             </p>
           </div>
 
-          <div class="showcase-window">
+          <div class="showcase-window parallax-card" data-depth="10">
             <div class="window-bar">
               <span></span><span></span><span></span>
             </div>
@@ -165,7 +205,7 @@
         </div>
       </section>
 
-      <section class="section ability-section" id="ability">
+      <section class="section ability-section reveal-on-scroll" id="ability">
         <div class="container">
           <div class="section-heading center-align">
             <div class="eyebrow soft">Core Ability</div>
@@ -181,7 +221,7 @@
             <article class="ability-card tall">
               <span class="card-index">02</span>
               <h3>产品级层次</h3>
-              <p>从 Hero 到演示区、能力区、对比区，每一屏都换构图，不让页面像复制粘贴。</p>
+              <p>从 Hero 到演示区、能力区、价格区、口碑区，每一屏都换构图，不让页面像复制粘贴。</p>
             </article>
             <article class="ability-card">
               <span class="card-index">03</span>
@@ -197,7 +237,7 @@
         </div>
       </section>
 
-      <section class="section scenes-section" id="scenes">
+      <section class="section scenes-section reveal-on-scroll" id="scenes">
         <div class="container scenes-grid">
           <div class="scene-intro">
             <div class="eyebrow soft">For Different Moments</div>
@@ -223,7 +263,37 @@
         </div>
       </section>
 
-      <section class="section social-proof">
+      <section class="section highlight-section reveal-on-scroll" id="highlights">
+        <div class="container highlight-wrap">
+          <div class="section-heading left-align compact">
+            <div class="eyebrow soft">Highlight Ability</div>
+            <h2>细节决定它像不像一个真正的品牌官网。</h2>
+          </div>
+          <div class="highlight-stack">
+            <article class="highlight-card highlight-main">
+              <div>
+                <small>视觉节奏</small>
+                <h3>大块留白 + 发光层次 + 圆角结构，让页面更像产品发布页。</h3>
+              </div>
+              <div class="chip-row">
+                <span class="mini-pill">发光不过量</span>
+                <span class="mini-pill">圆角统一</span>
+                <span class="mini-pill">动效克制</span>
+              </div>
+            </article>
+            <article class="highlight-card">
+              <small>品牌细节</small>
+              <h3>Logo、按钮、标签、浮层和小角色全部统一气质。</h3>
+            </article>
+            <article class="highlight-card soft">
+              <small>交互反馈</small>
+              <h3>按钮 hover、卡片抬升、滚动入场都刚刚好，不做廉价表演。</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section social-proof reveal-on-scroll" id="reviews">
         <div class="container proof-wrap">
           <div class="proof-copy">
             <div class="eyebrow soft">Trusted Feeling</div>
@@ -246,7 +316,7 @@
         </div>
       </section>
 
-      <section class="section compare-section" id="compare">
+      <section class="section compare-section reveal-on-scroll" id="compare">
         <div class="container compare-wrap">
           <div class="section-heading center-align compact">
             <div class="eyebrow soft">Why BUMA</div>
@@ -276,7 +346,59 @@
         </div>
       </section>
 
-      <section class="section final-cta">
+      <section class="section pricing-section reveal-on-scroll" id="pricing">
+        <div class="container">
+          <div class="section-heading center-align compact">
+            <div class="eyebrow soft">Pricing</div>
+            <h2>从先试一试，到直接做成门面。</h2>
+            <p>版本不靠花哨命名，而是按真实使用阶段来分，让用户容易选，也容易成交。</p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="price-card">
+              <div class="price-top">
+                <span class="price-tag">轻体验</span>
+                <h3>Starter</h3>
+                <strong>适合先看方向</strong>
+              </div>
+              <ul>
+                <li>首页方向梳理</li>
+                <li>首屏文案与结构建议</li>
+                <li>品牌视觉参考建议</li>
+              </ul>
+              <a class="btn-secondary" href="contact.html">先聊需求</a>
+            </article>
+            <article class="price-card featured">
+              <div class="price-top">
+                <span class="price-tag">推荐方案</span>
+                <h3>Brand Page</h3>
+                <strong>适合直接上线展示</strong>
+              </div>
+              <ul>
+                <li>完整首页设计与实现</li>
+                <li>品牌感文案 + 动效细节</li>
+                <li>响应式适配 + 基础上线</li>
+              </ul>
+              <a class="btn-primary" href="contact.html">预约制作</a>
+            </article>
+            <article class="price-card">
+              <div class="price-top">
+                <span class="price-tag">更完整</span>
+                <h3>Growth Set</h3>
+                <strong>适合继续做转化与内容矩阵</strong>
+              </div>
+              <ul>
+                <li>首页 + 解决方案页</li>
+                <li>FAQ / 场景页扩展</li>
+                <li>品牌视觉统一优化</li>
+              </ul>
+              <a class="btn-secondary" href="contact.html">咨询详情</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-cta reveal-on-scroll">
         <div class="container">
           <div class="cta-panel">
             <div>
@@ -294,11 +416,30 @@
     </main>
 
     <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <img class="footer-logo" src="assets-buma-logo.svg" alt="BUMA" />
+          <p>BUMA 是一个面向个人与团队的智能效率品牌，用更轻盈、更聪明的方式，把复杂工作变简单。</p>
+        </div>
+        <div class="footer-links">
+          <a href="#product">产品感受</a>
+          <a href="#ability">核心能力</a>
+          <a href="#pricing">版本方案</a>
+          <a href="contact.html">联系 BUMA</a>
+        </div>
+        <div class="footer-meta">
+          <span>山东临沂</span>
+          <span>电话 15550927555</span>
+          <span>微信 bm8150</span>
+        </div>
+      </div>
       <div class="container footer-line">
         <span>BUMA</span>
-        <span>智能效率品牌 · 山东临沂 · 微信 bm8150 · 电话 15550927555</span>
+        <span>智能效率品牌 · 品牌官网首页展示版</span>
       </div>
     </footer>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

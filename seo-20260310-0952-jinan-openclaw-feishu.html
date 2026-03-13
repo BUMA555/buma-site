@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>济南OpenClaw飞书工作流｜适合一人公司和小团队的本地部署思路</title>
-  <meta name="description" content="面向济南一人公司与小团队，梳理 OpenClaw 接入飞书、搭建本地工作流的真实落地思路：先从自托管网关、Control UI、消息通道和岗位分工做起。" />
-  <meta name="keywords" content="济南OpenClaw飞书工作流,济南OpenClaw本地部署,济南Agent工作流,一人公司飞书Agent,OpenClaw飞书接入" />
+  <title>济南 OpenClaw 飞书接入怎么做｜官方流程、权限清单与常见坑</title>
+  <meta name="description" content="如果你在济南想把 OpenClaw 接入飞书，这篇文章按官方文档整理了真实落地步骤：环境准备、Feishu 应用创建、权限配置、事件订阅、网关检查与常见坑。" />
+  <meta name="keywords" content="济南OpenClaw飞书接入,OpenClaw Feishu配置,OpenClaw飞书权限,济南OpenClaw部署,飞书机器人接入OpenClaw" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://buma555.github.io/buma-site/seo-20260310-0952-jinan-openclaw-feishu.html" />
   <link rel="stylesheet" href="styles.css" />
@@ -18,6 +18,7 @@
         <nav class="nav-links">
           <a href="index.html">首页</a>
           <a href="solutions.html">解决方案</a>
+          <a href="seo.html">文章</a>
           <a href="community.html">社区</a>
           <a href="openclaw-faq.html">FAQ</a>
           <a href="contact.html">联系 buma</a>
@@ -32,11 +33,11 @@
     <section class="hero">
       <div class="container">
         <div class="eyebrow">Jinan · OpenClaw · Feishu</div>
-        <h1 class="section-title">济南 OpenClaw 飞书工作流：一人公司先把消息、执行和交付接起来。</h1>
-        <p class="section-desc">如果你在济南做个人创业、小团队项目，想把 OpenClaw 真正接进飞书，而不是只停在看演示，这篇文章适合你。公开资料里，OpenClaw 的核心定位是自托管 Gateway，可连接多种聊天渠道；官方文档也明确列出 Feishu 作为可接入通道之一。落地时，重点不是堆很多 Agent，而是先把入口、分工和日常工作流跑顺。</p>
+        <h1 class="section-title">济南 OpenClaw 飞书接入怎么做：先把官方流程跑通，再谈工作流。</h1>
+        <p class="section-desc">如果你想在济南把 OpenClaw 真正接进飞书，最容易踩坑的地方不是模型，而是接入顺序、权限配置和事件订阅。下面这篇不是空泛介绍，而是按 OpenClaw 官方 Getting Started、Channels、Feishu 文档整理出的实操版说明，适合一人公司、小团队和本地服务商先把第一条链路跑起来。</p>
         <div class="button-row hero-actions">
-          <a class="btn-primary" href="contact.html">预约沟通你的流程</a>
-          <a class="btn-secondary" href="openclaw-one-person-workflow.html">先看一人公司工作流</a>
+          <a class="btn-primary" href="contact.html">让我帮你梳理接入链路</a>
+          <a class="btn-secondary" href="seo.html">返回文章专题</a>
         </div>
       </div>
     </section>
@@ -44,25 +45,26 @@
     <section class="section">
       <div class="container">
         <div class="section-header left">
-          <div class="eyebrow">Why This Topic</div>
-          <h2 class="section-title">为什么“济南 + OpenClaw + 飞书工作流”值得单独写一页</h2>
-          <p class="section-desc">这类搜索词背后，用户通常不是在找概念，而是在找一条更接近业务的落地路径：能不能本地部署、能不能进飞书、适不适合一人公司、第一步应该从哪做起。</p>
+          <div class="eyebrow">What This Page Solves</div>
+          <h2 class="section-title">这页解决的不是“OpenClaw 是什么”，而是“飞书到底怎么接进去”。</h2>
+          <p class="section-desc">很多页面只会说 OpenClaw 能接飞书，但真正要落地的人更关心 4 件事：环境怎么准备、Feishu 应用怎么建、权限要开什么、为什么明明配了还是收不到消息。</p>
         </div>
-        <div class="grid-3">
-          <article class="card feature-card home-card">
-            <div class="feature-icon">01</div>
-            <h3>需求更具体</h3>
-            <p>搜到城市词的人，往往已经进入比价、咨询、部署评估阶段，不再只是泛泛了解 AI 工具。</p>
+        <div class="grid-2">
+          <article class="card case-card">
+            <h3>适合谁看</h3>
+            <ul class="list">
+              <li>想把飞书消息接进 OpenClaw 的一人公司</li>
+              <li>需要先跑通机器人回复与消息同步的小团队</li>
+              <li>准备做本地部署、但不想一上来踩一堆配置坑的人</li>
+            </ul>
           </article>
-          <article class="card feature-card home-card">
-            <div class="feature-icon">02</div>
-            <h3>关键词更贴业务</h3>
-            <p>“飞书”“本地部署”“工作流”都比单纯的 OpenClaw 更接近真实采购和落地动作。</p>
-          </article>
-          <article class="card feature-card home-card">
-            <div class="feature-icon">03</div>
-            <h3>更适合承接咨询</h3>
-            <p>当页面把步骤、边界和适用场景讲明白，转化质量通常比空泛软文更高。</p>
+          <article class="card case-card">
+            <h3>你会拿到什么</h3>
+            <ul class="list">
+              <li>官方能力边界：OpenClaw 是自托管 Gateway，不是单独的飞书插件壳子</li>
+              <li>真实接入步骤：从 `openclaw onboard` 到 Feishu 长连接事件订阅</li>
+              <li>常见坑位：权限、网关状态、事件配置、Lark 域名差异</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -71,26 +73,22 @@
     <section class="section section-soft">
       <div class="container">
         <div class="section-header left">
-          <div class="eyebrow">Public Facts</div>
-          <h2 class="section-title">先说公开资料能确认的几件事</h2>
-          <p class="section-desc">下面这些信息来自 OpenClaw 官网文档与 GitHub 公开页面，适合作为判断方向的基础，但真正实施时仍要结合你的环境与业务节奏。</p>
+          <div class="eyebrow">Official Facts</div>
+          <h2 class="section-title">先把官方资料里能确认的关键信息讲清楚</h2>
+          <p class="section-desc">这部分不是猜测，都是 OpenClaw 官方文档已经明确写出来的内容。</p>
         </div>
-        <div class="grid-2">
-          <article class="card case-card">
-            <h3>OpenClaw 本身是什么</h3>
-            <ul class="list">
-              <li>官方把它定义为可自托管的 Gateway，用来把常用聊天渠道接入 AI 助手。</li>
-              <li>公开介绍强调它支持多渠道、多会话、多 Agent 路由，而不是单纯网页聊天工具。</li>
-              <li>官方入门文档给出安装、onboard、gateway status、dashboard 等标准启动路径。</li>
-            </ul>
+        <div class="grid-3">
+          <article class="card seo-card">
+            <h3>OpenClaw 是什么</h3>
+            <p>官方入门文档把它定位为自托管 Gateway，用来把聊天渠道接进 AI 助手。最快的本地验证方式是 `openclaw dashboard`，默认可在本机浏览器打开控制台。</p>
           </article>
-          <article class="card case-card">
-            <h3>和飞书有什么关系</h3>
-            <ul class="list">
-              <li>官方 Channels 文档里明确列出 Feishu/Lark 通道，但说明它以插件形式接入。</li>
-              <li>这意味着“能接飞书”是公开能力范围内的事情，但具体机器人、权限、消息路由仍需按你的环境配置。</li>
-              <li>如果你想要的是业务协作，不只是聊天演示，飞书是很自然的落点。</li>
-            </ul>
+          <article class="card seo-card">
+            <h3>环境要求</h3>
+            <p>官方 Getting Started 写得很明确：推荐 Node 24，Node 22 LTS 也兼容。第一步不是写提示词，而是先把 `openclaw onboard`、`openclaw gateway status` 这些基础动作跑通。</p>
+          </article>
+          <article class="card seo-card">
+            <h3>飞书接入方式</h3>
+            <p>官方 Channels 文档明确列出 Feishu/Lark；Feishu 文档说明它通过平台 WebSocket 事件订阅接入，这意味着你不一定非得先暴露公网 webhook 才能开始。</p>
           </article>
         </div>
       </div>
@@ -99,22 +97,46 @@
     <section class="section">
       <div class="container">
         <div class="section-header left">
-          <div class="eyebrow">How To Start</div>
-          <h2 class="section-title">济南团队做 OpenClaw 飞书工作流，建议从这 3 步开始</h2>
-          <p class="section-desc">不建议一上来就追求“大而全”。对一人公司、小团队来说，先把基础链路做顺，比一次堆十几个 Agent 更重要。</p>
+          <div class="eyebrow">Real Workflow</div>
+          <h2 class="section-title">按这个顺序做，飞书接入成功率更高</h2>
+          <p class="section-desc">真正容易出错的不是步骤多，而是顺序错。下面是更接近实战的落地顺序。</p>
         </div>
-        <div class="grid-3">
-          <article class="card seo-card">
-            <h3>第一步：先跑通 Gateway 与 Control UI</h3>
-            <p>按官方公开文档，先确认 Node 版本、完成 onboard，再用 dashboard 或本地 UI 验证环境是否可用。没有这一步，后面的飞书接入和工作流设计都容易变成纸上谈兵。</p>
+        <div class="grid-2">
+          <article class="card case-card">
+            <h3>第 1 步：先把 OpenClaw 网关跑起来</h3>
+            <ul class="list">
+              <li>安装后先跑 `openclaw onboard`，让向导把基础配置写好。</li>
+              <li>随后执行 `openclaw gateway status`，确认网关已经起来。</li>
+              <li>再用 `openclaw dashboard` 或本地控制台确认最基本的聊天能力可用。</li>
+            </ul>
+            <p>这一层没通，后面飞书事件订阅即便填完也大概率收不到消息。</p>
           </article>
-          <article class="card seo-card">
-            <h3>第二步：只接一条高频飞书流程</h3>
-            <p>优先选最常发生、最容易标准化的一类动作，比如内容改写、FAQ 回复、线索整理、日报汇总。先把单一流程做稳，再扩多岗位协作。</p>
+          <article class="card case-card">
+            <h3>第 2 步：去 Feishu 开应用并拿凭证</h3>
+            <ul class="list">
+              <li>进入 Feishu Open Platform 新建企业应用。</li>
+              <li>在 Credentials &amp; Basic Info 里拿到 App ID 和 App Secret。</li>
+              <li>如果你用的是国际版 Lark，官方文档提醒要额外设置 `domain: \"lark\"`。</li>
+            </ul>
+            <p>这一步最重要的是保管好 App Secret，不要乱散发。</p>
           </article>
-          <article class="card seo-card">
-            <h3>第三步：把岗位边界写清楚</h3>
-            <p>内容、销售、客服、运营分别做什么，哪些消息自动流转，哪些必须人工确认，都要先定口径。这样 OpenClaw 才是在帮你补位，而不是制造新混乱。</p>
+          <article class="card case-card">
+            <h3>第 3 步：权限别乱猜，按文档开</h3>
+            <ul class="list">
+              <li>Feishu 文档给了可批量导入的 scopes 列表，包括消息读取、发送、资源访问等权限。</li>
+              <li>至少要关注 `im:message`、`im:message:readonly`、`im:message:send_as_bot` 这类核心权限。</li>
+              <li>没批对权限，最常见现象就是应用能建起来，但机器人不收消息、不回消息。</li>
+            </ul>
+            <p>这一步不要省，很多人就是卡在权限没配齐。</p>
+          </article>
+          <article class="card case-card">
+            <h3>第 4 步：先开 Bot，再配事件订阅</h3>
+            <ul class="list">
+              <li>先启用 Feishu 应用里的 Bot 能力并设置机器人名称。</li>
+              <li>官方文档强调：配事件订阅前，要先完成 `openclaw channels add` 且保证网关正在运行。</li>
+              <li>在 Event Subscription 里选择“Use long connection to receive events”，并添加 `im.message.receive_v1`。</li>
+            </ul>
+            <p>如果网关没开就去配长连接，保存失败或者后续不生效，是非常常见的问题。</p>
           </article>
         </div>
       </div>
@@ -123,22 +145,23 @@
     <section class="section section-soft">
       <div class="container grid-2">
         <article class="card case-card">
-          <h2>哪些济南场景更适合做这类部署</h2>
-          <h3>一人公司 / 个人品牌</h3>
-          <p>内容产出、咨询承接、资料整理都压在一个人身上，最适合先把高频重复动作交给 Agent 处理。</p>
-          <h3>小型服务团队</h3>
-          <p>团队不大，但飞书里消息很多、任务碎、节奏快，适合把 FAQ、提醒、信息归档和线索分拣做成轻工作流。</p>
-          <h3>本地业务数字化尝试</h3>
-          <p>不是为了追热点，而是想让现有业务更顺、更省人，这种目标更适合做本地部署与渐进式接入。</p>
+          <h2>最常见的 5 个坑</h2>
+          <ol class="list">
+            <li>网关没启动就去配事件订阅，导致 Feishu 长连接保存失败。</li>
+            <li>只建了应用，没启用 Bot 能力，结果消息入口根本没打开。</li>
+            <li>权限没按文档导入完整，机器人无法读写消息。</li>
+            <li>把本该先在 Control UI 验证的基础问题，拖到飞书接入后才排查。</li>
+            <li>国际版 Lark 没设 `domain: \"lark\"`，结果域名环境不一致。</li>
+          </ol>
         </article>
         <article class="card case-card">
-          <h2>不建议一开始就承诺的事</h2>
-          <h3>不要写虚假案例</h3>
-          <p>没有真实客户验证的数据，就不要包装成“济南某企业已全面落地”。这种内容短期看像营销，长期反而伤信任。</p>
-          <h3>不要把所有能力都写满</h3>
-          <p>公开资料能确认的是能力边界和基础路径，不代表每个场景都能一键完成。页面里把能做、不能直接做、需要评估的部分说清楚，更符合 BUMA 的调性。</p>
-          <h3>不要忽略后续维护</h3>
-          <p>工作流上线后，还会涉及提示词、职责、消息策略和页面内容的迭代，所以部署只是开始，不是终点。</p>
+          <h2>哪些业务最适合先接这条链路</h2>
+          <ul class="list">
+            <li>咨询量不大，但问题重复度很高的服务型业务</li>
+            <li>内容生产、FAQ 回复、资料归档已经压得人很累的一人公司</li>
+            <li>想先试运行 1 个机器人，再逐步加岗位分工的小团队</li>
+          </ul>
+          <p>不建议一上来就追求“十几个 Agent 全自动联动”。先把飞书消息进入、分流、应答跑顺，收益更直接。</p>
         </article>
       </div>
     </section>
@@ -146,23 +169,28 @@
     <section class="section">
       <div class="container">
         <div class="section-header left">
-          <div class="eyebrow">Internal Links</div>
-          <h2 class="section-title">如果你正在评估，建议顺着这几页一起看</h2>
-          <p class="section-desc">这能帮助你把“能不能做”进一步落到“先做什么、怎么做、做到什么程度”。</p>
+          <div class="eyebrow">What A Good Service Page Should Say</div>
+          <h2 class="section-title">真正能转化的，不是堆词，而是把用户下一步写清楚</h2>
+          <p class="section-desc">所以这类页面应该回答用户真正的问题：你现在处在什么阶段、第一步该做什么、哪些坑最容易踩、做完之后能验证什么。</p>
         </div>
         <div class="grid-3">
-          <article class="card feature-card home-card">
-            <h3><a href="openclaw-one-person-workflow.html">OpenClaw 一人公司工作流</a></h3>
-            <p>先看岗位分工怎么拆，适合确定基础协作模型。</p>
-          </article>
-          <article class="card feature-card home-card">
-            <h3><a href="openclaw-faq.html">OpenClaw 常见问题 FAQ</a></h3>
-            <p>适合快速排除安装、接入、使用阶段的典型疑问。</p>
-          </article>
-          <article class="card feature-card home-card">
-            <h3><a href="openclaw-shandong-deploy.html">山东 OpenClaw 部署页</a></h3>
-            <p>如果你关注的是整体部署思路，可以先看更宽口径的地区页。</p>
-          </article>
+          <article class="card feature-card home-card"><h3>如果你还没安装</h3><p>先确认 Node 环境，再走官方 onboarding，不要先急着做飞书后台配置。</p></article>
+          <article class="card feature-card home-card"><h3>如果你已装好 OpenClaw</h3><p>下一步不是写一堆 Agent，而是先把 `channels add`、网关状态、日志检查做扎实。</p></article>
+          <article class="card feature-card home-card"><h3>如果你已在飞书里建好应用</h3><p>重点转到权限、Bot 能力、事件订阅和消息收发验证，不要再停留在介绍页层面。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header left">
+          <div class="eyebrow">Internal Links</div>
+          <h2 class="section-title">如果你要继续往下看，建议顺着这几页读</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card feature-card home-card"><h3><a href="seo.html">文章专题页</a></h3><p>先看整站内容结构和其它相关专题。</p></article>
+          <article class="card feature-card home-card"><h3><a href="openclaw-faq.html">OpenClaw FAQ</a></h3><p>适合排查安装、接入和基础使用问题。</p></article>
+          <article class="card feature-card home-card"><h3><a href="openclaw-one-person-workflow.html">一人公司工作流页</a></h3><p>适合把飞书接入继续落到日常执行流程里。</p></article>
         </div>
       </div>
     </section>
@@ -171,8 +199,8 @@
       <div class="container cta-wrap-home">
         <div>
           <div class="eyebrow">CTA</div>
-          <h2 class="section-title">想做济南 OpenClaw 飞书工作流，不必先做大，先做顺。</h2>
-          <p class="section-desc">把你现在最卡的一条流程发给 buma，我们先帮你判断：适不适合做本地部署、需不需要接飞书、第一阶段应该先落哪一个 Agent。</p>
+          <h2 class="section-title">如果你现在就想接飞书，不要再看概念，直接看你卡在哪一步。</h2>
+          <p class="section-desc">把你当前的状态发给我：已安装 / 未安装、已建应用 / 未建应用、能收消息 / 不能收消息。我按这个顺序帮你判断，下一步先改哪里。</p>
         </div>
         <div class="button-row">
           <a class="btn-primary" href="contact.html">加微信 bm8150</a>
@@ -185,7 +213,7 @@
   <footer class="footer">
     <div class="container footer-line">
       <span>buma</span>
-      <span>济南 OpenClaw 飞书工作流</span>
+      <span>济南 OpenClaw 飞书接入</span>
     </div>
   </footer>
 </body>

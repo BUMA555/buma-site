@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OpenClaw 常见问题 FAQ｜飞书接入、权限、群聊触发与排障入口</title>
-  <meta name="description" content="OpenClaw 常见问题 FAQ，集中整理飞书接入、权限配置、群聊 @ 触发、Dashboard、Chrome 扩展与 cron 定时任务等高频问题，方便快速定位入口。" />
-  <meta name="keywords" content="OpenClaw FAQ,OpenClaw常见问题,OpenClaw飞书接入,OpenClaw权限,OpenClaw requireMention,OpenClaw Dashboard" />
+  <title>OpenClaw 常见问题 FAQ｜飞书接入、Dashboard、Gateway 与排障入口</title>
+  <meta name="description" content="OpenClaw 常见问题 FAQ，集中整理飞书接入、权限配置、群聊 @ 触发、Dashboard、Gateway、日志排查、Chrome 扩展与 cron 定时任务等高频问题，方便快速定位入口。" />
+  <meta name="keywords" content="OpenClaw FAQ,OpenClaw常见问题,OpenClaw飞书接入,OpenClaw权限,OpenClaw requireMention,OpenClaw Dashboard,OpenClaw Gateway,OpenClaw logs" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://buma555.github.io/buma-site/openclaw-faq.html" />
   <link rel="stylesheet" href="styles.css" />
@@ -35,7 +35,7 @@
     <div class="container">
       <div class="eyebrow">OpenClaw FAQ</div>
       <h1 class="section-title">OpenClaw 常见问题 FAQ：先按你卡住的那一步找入口。</h1>
-      <p class="section-desc">这页不再堆旧链接，而是把现在最常见的 OpenClaw 问题重新归类：飞书怎么接、权限为什么不生效、群里为什么要 <code>@</code> 才回、Dashboard 为什么打不开、Chrome 扩展为什么挂着感叹号、定时任务怎么跑。你可以先快速定位问题，再进入对应正文继续看。</p>
+      <p class="section-desc">这页不再堆旧链接，而是把现在最常见的 OpenClaw 问题重新归类：飞书怎么接、权限为什么不生效、群里为什么要 <code>@</code> 才回、Dashboard 为什么打不开、Gateway 为什么起不来、日志应该先看哪条、Chrome 扩展为什么挂着感叹号、定时任务怎么跑。你可以先快速定位问题，再进入对应正文继续看。</p>
       <div class="button-row hero-actions">
         <a class="btn-primary" href="seo.html">去文章中心</a>
         <a class="btn-secondary" href="contact.html">直接沟通当前问题</a>
@@ -57,6 +57,34 @@
         <article class="card seo-card"><h3><a href="seo-20260314-0835-openclaw-feishu-websocket-pairing.html">长连接、配对码、群聊触发不通</a></h3><p>适合排查 WebSocket、pairing 审批、群聊白名单和事件订阅。</p></article>
         <article class="card seo-card"><h3><a href="seo-20260314-0910-openclaw-chrome-extension-browser-relay.html">Chrome 扩展显示 ! 或 attach tab 没反应</a></h3><p>适合排查 browser relay、<code>chrome</code> profile、ON 徽章和 relay 地址。</p></article>
         <article class="card seo-card"><h3><a href="seo-20260314-0920-openclaw-dashboard-gateway-status.html">Dashboard 打不开、1008、unauthorized</a></h3><p>适合先拆清控制台地址、<code>gateway status</code>、鉴权和配对问题。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header left">
+        <div class="eyebrow">Dashboard / Gateway</div>
+        <h2 class="section-title">控制台、服务状态和日志排障入口</h2>
+        <p class="section-desc">如果你卡的不是“飞书接不进来”，而是 Dashboard 打不开、Gateway 启不来、日志看不懂、页面反复报 <code>unauthorized</code>，优先从这组入口开始。它们属于同一类问题，但排查顺序并不一样。</p>
+      </div>
+      <div class="grid-2">
+        <article class="card case-card">
+          <h3><a href="seo-20260314-0920-openclaw-dashboard-gateway-status.html">Dashboard 打不开、1008、PAIRING_REQUIRED</a></h3>
+          <p>先拆清控制台地址、<code>openclaw dashboard</code>、<code>openclaw gateway status</code>、鉴权和 pairing 的先后顺序，避免把控制台打不开误判成飞书问题。</p>
+        </article>
+        <article class="card case-card">
+          <h3><a href="seo-20260314-1236-openclaw-logs-follow-troubleshooting.html">OpenClaw logs 怎么看</a></h3>
+          <p>适合先学会看 <code>openclaw logs --follow</code>、状态面板和常见日志信号，把“到底是哪一层坏了”快速拆出来。</p>
+        </article>
+        <article class="card case-card">
+          <h3><a href="seo-20260314-1330-openclaw-gateway-service-not-running.html">Gateway 起不来怎么办</a></h3>
+          <p>适合排查 <code>gateway.mode=local</code>、严格配置校验、非 loopback 鉴权限制、<code>EADDRINUSE</code> 和端口占用。</p>
+        </article>
+        <article class="card case-card">
+          <h3><a href="seo-20260314-1348-openclaw-dashboard-auth-token-mismatch.html">unauthorized / AUTH_TOKEN_MISMATCH 怎么办</a></h3>
+          <p>适合拆清 <code>AUTH_TOKEN_MISMATCH</code>、<code>AUTH_DEVICE_TOKEN_MISMATCH</code>、设备 token 漂移和 Dashboard 鉴权层的区别。</p>
+        </article>
       </div>
     </div>
   </section>
@@ -103,12 +131,12 @@
           <h3>4. 控制台与自动化类：页面打不开、定时任务不触发</h3>
           <ul class="list">
             <li>Dashboard 问题先拆成服务状态、鉴权、配对三层。</li>
-            <li>Chrome 扩展问题先拆成 relay、attach tab、profile 三层。</li>
-            <li>cron 问题先拆成 sessionTarget、payload 和触发时间语义。</li>
+            <li>Gateway 问题再继续拆成配置模式、端口占用、认证前提三层。</li>
+            <li>日志问题先看 <code>openclaw logs --follow</code>，再回到对应模块处理。</li>
             <li>别把所有报错混成一个问题看，分层后更容易处理。</li>
           </ul>
           <p><a href="seo-20260314-0920-openclaw-dashboard-gateway-status.html">先看：OpenClaw Dashboard 打不开怎么办</a></p>
-          <p><a href="seo-20260314-0808-openclaw-cron-reminder-guide.html">延伸：OpenClaw 定时任务怎么配</a></p>
+          <p><a href="seo-20260314-1330-openclaw-gateway-service-not-running.html">继续：OpenClaw gateway 起不来怎么办</a></p>
         </article>
       </div>
     </div>
@@ -123,11 +151,11 @@
       </div>
       <div class="grid-3">
         <article class="card seo-card"><h3><a href="seo-20260314-0741-openclaw-feishu-bot-setup.html">第 1 步：飞书机器人接入清单</a></h3><p>先把接入顺序、基础配置和第一轮测试跑通。</p></article>
-        <article class="card seo-card"><h3><a href="seo-20260314-0835-openclaw-feishu-websocket-pairing.html">第 2 步：长连接与 pairing</a></h3><p>把消息为什么进不来、配对为什么卡住看明白。</p></article>
-        <article class="card seo-card"><h3><a href="seo-20260314-0900-openclaw-feishu-bot-permissions.html">第 3 步：权限与事件订阅</a></h3><p>把“有配置但不生效”的高频误区一次理顺。</p></article>
-        <article class="card seo-card"><h3><a href="seo-20260314-0959-openclaw-feishu-group-require-mention.html">第 4 步：群聊触发规则</a></h3><p>把为什么经常要 <code>@</code> 才回、哪些人能触发讲清楚。</p></article>
-        <article class="card seo-card"><h3><a href="seo-20260314-0910-openclaw-chrome-extension-browser-relay.html">第 5 步：浏览器中继</a></h3><p>需要网页操作时，再去看 Chrome 扩展和 attach tab 的边界。</p></article>
-        <article class="card seo-card"><h3><a href="seo-20260314-0808-openclaw-cron-reminder-guide.html">第 6 步：提醒与定时任务</a></h3><p>接入跑通后，再补自动化和提醒策略，避免一开始就把链路搞复杂。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0900-openclaw-feishu-bot-permissions.html">第 2 步：权限与事件订阅</a></h3><p>把“有配置但不生效”的高频误区一次理顺。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0959-openclaw-feishu-group-require-mention.html">第 3 步：群聊触发规则</a></h3><p>把为什么经常要 <code>@</code> 才回、哪些人能触发讲清楚。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-1236-openclaw-logs-follow-troubleshooting.html">第 4 步：先学会看日志</a></h3><p>把日志信号和状态检查顺序先理顺，再去处理具体模块。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-1330-openclaw-gateway-service-not-running.html">第 5 步：服务起不来先查 Gateway</a></h3><p>把模式、鉴权、端口与配置问题拆开，不要和渠道问题混看。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-1348-openclaw-dashboard-auth-token-mismatch.html">第 6 步：unauthorized 再看 token</a></h3><p>把 Dashboard 鉴权、设备 token 漂移和 pairing 边界讲清楚。</p></article>
       </div>
     </div>
   </section>

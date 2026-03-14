@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BUMA文章中心｜OpenClaw部署、飞书接入与AI内容增长</title>
-  <meta name="description" content="BUMA 文章中心，持续整理 OpenClaw、本地部署、飞书接入、一人公司与 AI 内容增长相关实操内容，方便查找、阅读与咨询。" />
-  <meta name="keywords" content="BUMA文章中心,OpenClaw文章,飞书接入教程,本地部署,一人公司,AI内容增长" />
+  <title>BUMA文章中心｜一人公司、AI团队、内容增长与官网转化</title>
+  <meta name="description" content="BUMA 文章中心，围绕一人公司、AI团队、官网内容、客户承接与内容增长持续更新，优先整理和业务直接相关、能承接咨询与转化的文章。" />
+  <meta name="keywords" content="一人公司AI团队,AI内容增长,官网转化,客户承接,BUMA文章中心,临沂AI团队" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://buma555.github.io/buma-site/seo.html" />
   <link rel="stylesheet" href="styles.css" />
@@ -34,10 +34,10 @@
       <div class="container">
         <div class="eyebrow">Article Center</div>
         <h1 class="section-title">BUMA 文章中心</h1>
-        <p class="section-desc">这里持续整理 OpenClaw、本地部署、飞书接入、一人公司与 AI 内容增长相关内容。你可以直接按主题找资料，也可以先看精选文章，再决定要不要进一步沟通方案。</p>
+        <p class="section-desc">这里优先放和网站主线直接相关的内容：一人公司怎么搭 AI 团队、官网怎么承接客户、内容怎么持续生产、业务怎么提效。不是技术词越多越好，而是要对你的生意、转化和执行力有用。</p>
         <div class="button-row hero-actions">
           <a class="btn-primary" href="contact.html">预约咨询</a>
-          <a class="btn-secondary" href="openclaw-faq.html">查看 FAQ</a>
+          <a class="btn-secondary" href="solutions.html">先看解决方案</a>
         </div>
       </div>
     </section>
@@ -45,62 +45,14 @@
     <section class="section section-soft">
       <div class="container">
         <div class="section-header left">
-          <div class="eyebrow">Quick Paths</div>
-          <h2 class="section-title">按问题直达：先找到你现在卡住的那一步</h2>
-          <p class="section-desc">如果你不是来逛文章，而是已经卡在某个具体问题上，直接从这里进会更快。先按场景定位，再进对应正文，看完通常就能判断是配置问题、权限问题，还是使用顺序问题。</p>
+          <div class="eyebrow">Start Here</div>
+          <h2 class="section-title">先看和网站主线最相关的内容</h2>
+          <p class="section-desc">如果你是来判断这套东西到底能不能帮你做生意、做官网、做内容、接客户，先从这里进，不用先钻技术细节。</p>
         </div>
         <div class="grid-3">
-          <article class="card seo-card"><h3><a href="seo-20260314-0741-openclaw-feishu-bot-setup.html">飞书接入从哪开始</a></h3><p>适合刚准备接 OpenClaw + 飞书，想先看创建应用、填凭证、起 Gateway 的人。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0900-openclaw-feishu-bot-permissions.html">机器人有权限却还是发不出去</a></h3><p>适合排查 <code>im.message.receive_v1</code>、<code>im:message:send_as_bot</code>、发布状态和群聊边界。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1128-openclaw-feishu-message-send-failure-400.html">message.send 返回 400 先查什么</a></h3><p>适合排查飞书消息发送失败、Bot 能力、应用发布和 Gateway 日志。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1223-openclaw-feishu-webhook-verification-token-encrypt-key.html">Webhook 模式里的 verificationToken 和 encryptKey 怎么配</a></h3><p>适合排查回调模式、加密字段、<code>webhookHost</code>、端口路径和 WebSocket / webhook 选择。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1143-openclaw-feishu-pairing-approve-code-expire.html">pairing 码过期、approve 不生效怎么办</a></h3><p>适合排查飞书私聊配对码、1 小时有效期、pending 上限和批准顺序。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1108-openclaw-feishu-allowfrom-groupallowfrom.html">allowFrom、groupAllowFrom 到底怎么分</a></h3><p>适合排查私聊白名单、群白名单、群成员白名单和 <code>open_id</code> / <code>chat_id</code> 混淆。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0835-openclaw-feishu-websocket-pairing.html">飞书长连接、配对码、群聊 @ 为什么不通</a></h3><p>适合排查 WebSocket 订阅、pairing 审批、<code>requireMention</code> 和群策略。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0910-openclaw-chrome-extension-browser-relay.html">Chrome 扩展显示 ! 或 attach tab 不生效</a></h3><p>适合排查 browser relay、<code>chrome</code> profile、ON 徽章和远程 Gateway 场景。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0920-openclaw-dashboard-gateway-status.html">Dashboard 打不开、1008、unauthorized 怎么看</a></h3><p>适合先拆清控制台地址、<code>gateway status</code>、配对授权和鉴权报错。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1348-openclaw-dashboard-auth-token-mismatch.html">AUTH_TOKEN_MISMATCH、device token drift 怎么拆</a></h3><p>适合排查 <code>AUTH_TOKEN_MISMATCH</code>、<code>AUTH_DEVICE_TOKEN_MISMATCH</code>、<code>PAIRING_REQUIRED</code> 与 Dashboard unauthorized。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1438-openclaw-devices-approve-pairing-required.html">PAIRING_REQUIRED、pending request、--latest 该怎么批</a></h3><p>适合排查 <code>openclaw devices approve</code>、<code>devices list</code>、<code>PAIRING_REQUIRED</code> 与 <code>--latest</code> 的使用边界。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1423-openclaw-devices-rotate-token-drift-recovery.html">换设备后连不上，devices rotate 到底该怎么用</a></h3><p>适合排查 <code>openclaw devices list</code>、<code>approve</code>、<code>rotate</code>、<code>remove</code> 与 token drift 恢复顺序。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1450-openclaw-devices-remove-stale-pairing.html">旧设备残留、重复 pairing，什么时候该用 devices remove</a></h3><p>适合排查 stale pairing、旧设备清理、重新批准和 <code>AUTH_DEVICE_TOKEN_MISMATCH</code> 之后的重建顺序。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1236-openclaw-logs-follow-troubleshooting.html">日志很多但不知道先看哪一层</a></h3><p>适合把 <code>logs --follow</code> 放回 <code>status</code>、<code>gateway probe</code>、<code>doctor</code> 这条排障顺序里。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1330-openclaw-gateway-service-not-running.html">Gateway 起不来、mode=local、EADDRINUSE 怎么拆</a></h3><p>适合排查 <code>gateway.mode=local</code>、严格校验、非 loopback 鉴权与端口冲突。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0808-openclaw-cron-reminder-guide.html">想让提醒、定时任务和心跳自己跑</a></h3><p>适合看 cron、reminder、<code>main session</code>、<code>isolated</code> 和投递方式怎么选。</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-header left">
-          <div class="eyebrow">Featured</div>
-          <h2 class="section-title">精选文章</h2>
-          <p class="section-desc">如果你是第一次进入这个站，先从这几篇开始，基本能把主要问题看清楚。</p>
-        </div>
-        <div class="grid-3">
-          <article class="card seo-card"><h3><a href="seo-20260310-0952-jinan-openclaw-feishu.html">济南 OpenClaw 飞书接入怎么做</a></h3><p>看官方流程、权限清单、事件订阅与常见坑。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260310-1052-qingdao-openclaw-deploy.html">青岛 OpenClaw 本地部署</a></h3><p>看环境准备、Gateway 验证与部署顺序。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260310-1152-linyi-openclaw-agent.html">临沂 OpenClaw Agent 工作流</a></h3><p>看岗位拆分、协同方式和执行链路怎么设计。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0741-openclaw-feishu-bot-setup.html">OpenClaw 飞书机器人接入清单</a></h3><p>看创建应用、权限、事件订阅、pairing 和消息测试顺序。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0808-openclaw-cron-reminder-guide.html">OpenClaw 定时任务怎么配</a></h3><p>看 cron、提醒、heartbeat、main 与 isolated 怎么选。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0835-openclaw-feishu-websocket-pairing.html">OpenClaw 飞书长连接怎么接</a></h3><p>看 WebSocket 事件订阅、pairing 审批与群聊策略。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0900-openclaw-feishu-bot-permissions.html">OpenClaw 飞书机器人权限清单</a></h3><p>看必开权限、Bot 能力、事件订阅与群聊边界怎么收。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1128-openclaw-feishu-message-send-failure-400.html">OpenClaw 飞书发不出去消息怎么办</a></h3><p>看 <code>message.send</code> 返回 400 时该先查权限、发布状态还是日志。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1223-openclaw-feishu-webhook-verification-token-encrypt-key.html">OpenClaw Feishu webhook 怎么配</a></h3><p>看 <code>verificationToken</code>、<code>encryptKey</code>、<code>webhookHost</code> 与 WebSocket / webhook 该怎么选。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1236-openclaw-logs-follow-troubleshooting.html">OpenClaw logs 怎么看</a></h3><p>看 <code>openclaw logs --follow</code>、<code>gateway probe</code>、<code>doctor</code> 和常见日志信号该怎么判断。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1330-openclaw-gateway-service-not-running.html">OpenClaw gateway 起不来怎么办</a></h3><p>看 <code>gateway.mode=local</code>、严格校验、非 loopback 鉴权与 <code>EADDRINUSE</code> 怎么拆。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1348-openclaw-dashboard-auth-token-mismatch.html">OpenClaw unauthorized / AUTH_TOKEN_MISMATCH 怎么办</a></h3><p>看共享 token、device token、<code>PAIRING_REQUIRED</code> 和 Dashboard 鉴权链路怎么拆。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1438-openclaw-devices-approve-pairing-required.html">OpenClaw devices approve 怎么用</a></h3><p>看 <code>PAIRING_REQUIRED</code>、<code>devices list</code>、<code>approve --latest</code> 与 pending request 到底该怎么处理。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1423-openclaw-devices-rotate-token-drift-recovery.html">OpenClaw devices rotate 怎么用</a></h3><p>看 <code>devices list</code>、<code>approve</code>、<code>rotate</code>、<code>remove</code> 在 token drift 恢复里各自负责哪一层。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1450-openclaw-devices-remove-stale-pairing.html">OpenClaw devices remove 怎么用</a></h3><p>看旧设备残留、stale pairing、重新批准设备与 <code>remove</code> / <code>clear</code> / <code>revoke</code> 的边界。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1143-openclaw-feishu-pairing-approve-code-expire.html">OpenClaw 飞书 pairing 怎么批准</a></h3><p>看配对码为什么会过期、批准顺序怎么走、pending 请求为什么会堆住。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1108-openclaw-feishu-allowfrom-groupallowfrom.html">OpenClaw Feishu allowFrom 怎么配</a></h3><p>看私聊白名单、<code>groupAllowFrom</code>、群成员白名单和 ID 类型怎么分。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0959-openclaw-feishu-group-require-mention.html">OpenClaw 飞书群里为什么不回复？</a></h3><p>看为什么要 @ 才回、群消息边界、<code>groupPolicy</code> 与成员触发范围。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0910-openclaw-chrome-extension-browser-relay.html">OpenClaw Chrome 扩展怎么接</a></h3><p>看浏览器中继、attach tab、ON 徽章与 ! 报错怎么排查。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0920-openclaw-dashboard-gateway-status.html">OpenClaw Dashboard 打不开怎么办</a></h3><p>看 gateway status、unauthorized、1008 和设备授权怎么定位。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0145-jinan-ai-manju-startup.html">济南 AI漫剧创业</a></h3><p>看选题、脚本、发布节奏和起盘思路。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0155-qingdao-3d-manju-income.html">青岛 3D漫剧收益</a></h3><p>看产能、成本、回本周期和风险变量。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0215-weifang-lobster-ai-marketing.html">潍坊龙虾 AI营销</a></h3><p>看短视频、团购、私域承接和本地内容打法。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-1458-linyi-one-person-company-ai-team.html">临沂一人公司怎么搭一支 AI 团队</a></h3><p>直接讲官网、内容、客户承接、日常执行怎么拆给 AI 做，跟网站主线最相关。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-0135-linyi-openclaw-one-person-company.html">临沂 OpenClaw 一人公司</a></h3><p>适合看一人公司如何先把消息、内容和承接链路接起来。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-0215-weifang-lobster-ai-marketing.html">潍坊龙虾 AI 营销</a></h3><p>适合看本地业务怎么把短视频、SEO 和私域承接做成一套。</p></article>
         </div>
       </div>
     </section>
@@ -108,38 +60,17 @@
     <section class="section">
       <div class="container">
         <div class="section-header left">
-          <div class="eyebrow">OpenClaw</div>
-          <h2 class="section-title">OpenClaw / 飞书接入 / 本地部署</h2>
-          <p class="section-desc">这组内容更偏工具落地，适合正在研究 OpenClaw、飞书、Gateway、本地部署和一人公司执行链路的人。</p>
+          <div class="eyebrow">One Person Company</div>
+          <h2 class="section-title">一人公司 / AI 团队 / 官网转化</h2>
+          <p class="section-desc">这组文章更适合个人创业者、小团队负责人、本地服务商。重点不是炫技，而是把官网、内容、客户回复和执行流程先跑起来。</p>
         </div>
         <div class="grid-3">
-          <article class="card seo-card"><h3><a href="seo-20260310-0952-jinan-openclaw-feishu.html">济南 OpenClaw 飞书接入怎么做</a></h3><p>适合先了解接飞书要准备什么、先做什么、容易卡在哪。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260310-1052-qingdao-openclaw-deploy.html">青岛 OpenClaw 本地部署</a></h3><p>适合先了解部署顺序、环境准备和基础验证步骤。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260310-1152-linyi-openclaw-agent.html">临沂 OpenClaw Agent 工作流</a></h3><p>适合先了解岗位分工、消息入口和协同方式。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260310-1253-yantai-openclaw-one-person.html">烟台 OpenClaw 一人公司</a></h3><p>适合看一人公司先接消息还是先接内容流程。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260310-1353-weifang-openclaw-feishu.html">潍坊 OpenClaw 飞书</a></h3><p>适合看飞书协同、提醒和机器人工作流。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260310-1453-zibo-openclaw-workflow.html">淄博 OpenClaw 工作流</a></h3><p>适合看消息、协同和执行链路如何接稳。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260310-1553-weihai-openclaw-agent.html">威海 OpenClaw Agent</a></h3><p>适合看岗位分工和业务衔接。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260310-1653-jining-openclaw-deploy.html">济宁 OpenClaw 本地部署</a></h3><p>适合看 Gateway、消息入口和部署次序。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260310-1753-taian-openclaw-feishu.html">泰安 OpenClaw 飞书</a></h3><p>适合看消息入口、协同提醒和闭环搭建。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0741-openclaw-feishu-bot-setup.html">OpenClaw 飞书机器人接入清单</a></h3><p>适合看创建应用、权限、事件订阅、群聊策略和配对验证。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0808-openclaw-cron-reminder-guide.html">OpenClaw 定时任务怎么配</a></h3><p>适合看 cron、提醒、main session、isolated 和 wakeMode 怎么判断。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0835-openclaw-feishu-websocket-pairing.html">OpenClaw 飞书长连接怎么接</a></h3><p>适合看 WebSocket 事件订阅、pairing 审批与群聊策略。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0900-openclaw-feishu-bot-permissions.html">OpenClaw 飞书机器人权限清单</a></h3><p>适合看必开权限、消息发送前提、pairing 和群聊边界。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1128-openclaw-feishu-message-send-failure-400.html">OpenClaw 飞书发不出去消息怎么办</a></h3><p>适合看 <code>message.send</code> 返回 400、Bot 能力、应用发布和日志排查顺序。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1223-openclaw-feishu-webhook-verification-token-encrypt-key.html">OpenClaw Feishu webhook 怎么配</a></h3><p>适合看 <code>verificationToken</code>、<code>encryptKey</code>、<code>webhookHost</code>、回调地址和模式选择。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1236-openclaw-logs-follow-troubleshooting.html">OpenClaw logs 怎么看</a></h3><p>适合看 <code>logs --follow</code>、<code>status --all</code>、<code>gateway probe</code> 和不同日志信号该怎么分层判断。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1330-openclaw-gateway-service-not-running.html">OpenClaw gateway 起不来怎么办</a></h3><p>适合看 <code>gateway.mode=local</code>、服务不运行、非 loopback 鉴权限制和 <code>EADDRINUSE</code> 端口冲突。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1348-openclaw-dashboard-auth-token-mismatch.html">OpenClaw unauthorized / AUTH_TOKEN_MISMATCH 怎么办</a></h3><p>适合看 <code>AUTH_TOKEN_MISMATCH</code>、<code>AUTH_DEVICE_TOKEN_MISMATCH</code>、设备 token 漂移与 Dashboard auth 细节码。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1438-openclaw-devices-approve-pairing-required.html">OpenClaw devices approve 怎么用</a></h3><p>适合看 <code>PAIRING_REQUIRED</code>、<code>devices list</code>、<code>approve --latest</code> 与 pending request 的处理顺序。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1423-openclaw-devices-rotate-token-drift-recovery.html">OpenClaw devices rotate 怎么用</a></h3><p>适合看 <code>devices list</code>、<code>approve</code>、<code>rotate</code>、<code>remove</code> 与 token drift recovery 到底怎么配合。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1450-openclaw-devices-remove-stale-pairing.html">OpenClaw devices remove 怎么用</a></h3><p>适合看旧设备残留、重复 pairing、重新批准设备，以及何时该用 <code>remove</code> 而不是直接 <code>clear</code>。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1143-openclaw-feishu-pairing-approve-code-expire.html">OpenClaw 飞书 pairing 怎么批准</a></h3><p>适合看配对码 1 小时有效期、pending 请求上限和 approve 之后怎么验证。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-1108-openclaw-feishu-allowfrom-groupallowfrom.html">OpenClaw Feishu allowFrom 怎么配</a></h3><p>适合看私聊白名单、<code>groupAllowFrom</code>、群成员白名单和 <code>open_id</code>/<code>chat_id</code> 怎么区分。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0959-openclaw-feishu-group-require-mention.html">OpenClaw 飞书群里为什么不回复？</a></h3><p>适合看为什么要 @ 才回、<code>requireMention</code>、<code>allowFrom</code> 和群白名单怎么配。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0910-openclaw-chrome-extension-browser-relay.html">OpenClaw Chrome 扩展怎么接</a></h3><p>适合看 browser relay、attach tab、relay not reachable 和使用边界。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0920-openclaw-dashboard-gateway-status.html">OpenClaw Dashboard 打不开怎么办</a></h3><p>适合看 gateway status、dashboard 认证、1008 和 PAIRING_REQUIRED 怎么拆开排查。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0135-linyi-openclaw-one-person-company.html">临沂 OpenClaw 一人公司</a></h3><p>适合看消息、内容和承接链路怎么做成轻量方案。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-1458-linyi-one-person-company-ai-team.html">临沂一人公司怎么搭一支 AI 团队</a></h3><p>聚焦一个人的公司如何先用 AI 补内容、补官网、补客户承接。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-0135-linyi-openclaw-one-person-company.html">临沂 OpenClaw 一人公司</a></h3><p>聚焦轻量流程、消息入口和内容承接链路。</p></article>
+          <article class="card seo-card"><h3><a href="solutions.html">BUMA 解决方案</a></h3><p>适合看这套 AI 团队方案到底能帮你解决哪些业务问题。</p></article>
+          <article class="card seo-card"><h3><a href="about.html">关于 BUMA</a></h3><p>适合看 BUMA 现在在做什么、服务谁、为什么持续写这些内容。</p></article>
+          <article class="card seo-card"><h3><a href="contact.html">联系 BUMA</a></h3><p>适合已经想做官网、内容或 AI 工作流的人直接沟通。</p></article>
+          <article class="card seo-card"><h3><a href="community.html">社区入口</a></h3><p>适合继续看真实案例、问题交流和更新动态。</p></article>
         </div>
       </div>
     </section>
@@ -148,41 +79,36 @@
       <div class="container">
         <div class="section-header left">
           <div class="eyebrow">Content Growth</div>
-          <h2 class="section-title">AI 漫剧 / 3D 漫剧 / 本地内容增长</h2>
-          <p class="section-desc">这组内容更偏内容生产和变现路径，适合在做短视频、IP、漫剧内容或本地获客的人。</p>
+          <h2 class="section-title">内容增长 / 本地获客 / IP 起盘</h2>
+          <p class="section-desc">如果你更关心内容怎么起盘、怎么持续产出、怎么承接本地客户，这组内容更适合你。</p>
         </div>
         <div class="grid-3">
-          <article class="card seo-card"><h3><a href="seo-20260314-0145-jinan-ai-manju-startup.html">济南 AI漫剧创业</a></h3><p>适合看从选题、脚本到发布节奏的起盘逻辑。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0155-qingdao-3d-manju-income.html">青岛 3D漫剧收益</a></h3><p>适合看产能、成本、回本周期和风险变量。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0205-yantai-high-pay-manju-writer.html">烟台高薪漫剧编剧</a></h3><p>适合看内容训练、交付标准和成长路径。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0215-weifang-lobster-ai-marketing.html">潍坊龙虾 AI营销</a></h3><p>适合看短视频、团购、私域承接和本地内容打法。</p></article>
-          <article class="card seo-card"><h3><a href="seo-20260314-0225-zibo-manju-entrepreneurship.html">淄博漫剧创业</a></h3><p>适合看一个人如何先把内容工作流跑起来。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-0145-jinan-ai-manju-startup.html">济南 AI 漫剧创业</a></h3><p>适合看怎么把选题、脚本和发布节奏做成长期动作。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-0155-qingdao-3d-manju-income.html">青岛 3D 漫剧收益</a></h3><p>适合看产能、成本、回本周期和风险变量。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-0215-weifang-lobster-ai-marketing.html">潍坊龙虾 AI 营销</a></h3><p>适合看本地生意怎么把内容、SEO、私域承接串起来。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-0205-yantai-high-pay-manju-writer.html">烟台高薪漫剧编剧</a></h3><p>适合看脚本能力、交付标准和内容训练路径。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-0225-zibo-manju-entrepreneurship.html">淄博漫剧创业</a></h3><p>适合看一个人如何把内容流水线先跑起来。</p></article>
+          <article class="card seo-card"><h3><a href="index.html">返回首页</a></h3><p>适合重新看网站主线表达和整体承接路径。</p></article>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container grid-2">
-        <article class="card case-card">
-          <h3>继续看什么</h3>
-          <ul class="list">
-            <li>想看具体问题，去 `FAQ`。</li>
-            <li>想看完整服务，去 `解决方案`。</li>
-            <li>想直接沟通当前业务，去 `联系 buma`。</li>
-          </ul>
-        </article>
-        <article class="card case-card">
-          <h3>更新方式</h3>
-          <ul class="list">
-            <li>优先更新有搜索需求、也有真实信息量的内容。</li>
-            <li>减少空泛介绍，增加步骤、坑位、案例拆解和判断依据。</li>
-            <li>同主题内容持续补充，不再只靠单页硬撑。</li>
-          </ul>
-        </article>
+      <div class="container">
+        <div class="section-header left">
+          <div class="eyebrow">Related Tools</div>
+          <h2 class="section-title">工具和接入内容，只保留和业务主线强相关的部分</h2>
+          <p class="section-desc">如果你已经确定要把 OpenClaw、飞书或消息协同接进业务里，再看这组内容；否则先看上面的业务页更合适。</p>
+        </div>
+        <div class="grid-3">
+          <article class="card seo-card"><h3><a href="seo-20260310-0952-jinan-openclaw-feishu.html">济南 OpenClaw 飞书接入</a></h3><p>适合看飞书怎么接进工作流，而不是只看技术概念。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260310-1052-qingdao-openclaw-deploy.html">青岛 OpenClaw 本地部署</a></h3><p>适合先了解最小部署与验证顺序。</p></article>
+          <article class="card seo-card"><h3><a href="openclaw-faq.html">OpenClaw 常见问题</a></h3><p>适合在真要落地时查 FAQ，不再把 FAQ 当成文章主阵地。</p></article>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="container footer-line"><span>buma</span><span>文章中心</span></div></footer>
+  <footer class="footer"><div class="container footer-line"><span>buma</span><span>一人公司、AI 团队、内容增长与官网转化</span></div></footer>
 </body>
 </html>

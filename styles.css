@@ -688,8 +688,8 @@ section {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(14px);
-  background: rgba(255, 255, 255, 0.86);
-  border-bottom: 1px solid rgba(110, 159, 255, 0.12);
+  background: rgba(11, 15, 26, 0.86);
+  border-bottom: 1px solid rgba(124, 92, 255, 0.18);
 }
 
 .nav {

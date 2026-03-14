@@ -53,6 +53,7 @@
           <article class="card seo-card"><h3><a href="seo-20260314-0741-openclaw-feishu-bot-setup.html">飞书接入从哪开始</a></h3><p>适合刚准备接 OpenClaw + 飞书，想先看创建应用、填凭证、起 Gateway 的人。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-0900-openclaw-feishu-bot-permissions.html">机器人有权限却还是发不出去</a></h3><p>适合排查 <code>im.message.receive_v1</code>、<code>im:message:send_as_bot</code>、发布状态和群聊边界。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-1128-openclaw-feishu-message-send-failure-400.html">message.send 返回 400 先查什么</a></h3><p>适合排查飞书消息发送失败、Bot 能力、应用发布和 Gateway 日志。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-1143-openclaw-feishu-pairing-approve-code-expire.html">pairing 码过期、approve 不生效怎么办</a></h3><p>适合排查飞书私聊配对码、1 小时有效期、pending 上限和批准顺序。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-1108-openclaw-feishu-allowfrom-groupallowfrom.html">allowFrom、groupAllowFrom 到底怎么分</a></h3><p>适合排查私聊白名单、群白名单、群成员白名单和 <code>open_id</code> / <code>chat_id</code> 混淆。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-0835-openclaw-feishu-websocket-pairing.html">飞书长连接、配对码、群聊 @ 为什么不通</a></h3><p>适合排查 WebSocket 订阅、pairing 审批、<code>requireMention</code> 和群策略。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-0910-openclaw-chrome-extension-browser-relay.html">Chrome 扩展显示 ! 或 attach tab 不生效</a></h3><p>适合排查 browser relay、<code>chrome</code> profile、ON 徽章和远程 Gateway 场景。</p></article>
@@ -78,6 +79,7 @@
           <article class="card seo-card"><h3><a href="seo-20260314-0835-openclaw-feishu-websocket-pairing.html">OpenClaw 飞书长连接怎么接</a></h3><p>看 WebSocket 事件订阅、pairing 审批与群聊策略。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-0900-openclaw-feishu-bot-permissions.html">OpenClaw 飞书机器人权限清单</a></h3><p>看必开权限、Bot 能力、事件订阅与群聊边界怎么收。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-1128-openclaw-feishu-message-send-failure-400.html">OpenClaw 飞书发不出去消息怎么办</a></h3><p>看 <code>message.send</code> 返回 400 时该先查权限、发布状态还是日志。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-1143-openclaw-feishu-pairing-approve-code-expire.html">OpenClaw 飞书 pairing 怎么批准</a></h3><p>看配对码为什么会过期、批准顺序怎么走、pending 请求为什么会堆住。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-1108-openclaw-feishu-allowfrom-groupallowfrom.html">OpenClaw Feishu allowFrom 怎么配</a></h3><p>看私聊白名单、<code>groupAllowFrom</code>、群成员白名单和 ID 类型怎么分。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-0959-openclaw-feishu-group-require-mention.html">OpenClaw 飞书群里为什么不回复？</a></h3><p>看为什么要 @ 才回、群消息边界、<code>groupPolicy</code> 与成员触发范围。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-0910-openclaw-chrome-extension-browser-relay.html">OpenClaw Chrome 扩展怎么接</a></h3><p>看浏览器中继、attach tab、ON 徽章与 ! 报错怎么排查。</p></article>
@@ -111,6 +113,7 @@
           <article class="card seo-card"><h3><a href="seo-20260314-0835-openclaw-feishu-websocket-pairing.html">OpenClaw 飞书长连接怎么接</a></h3><p>适合看 WebSocket 事件订阅、pairing 审批与群聊策略。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-0900-openclaw-feishu-bot-permissions.html">OpenClaw 飞书机器人权限清单</a></h3><p>适合看必开权限、消息发送前提、pairing 和群聊边界。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-1128-openclaw-feishu-message-send-failure-400.html">OpenClaw 飞书发不出去消息怎么办</a></h3><p>适合看 <code>message.send</code> 返回 400、Bot 能力、应用发布和日志排查顺序。</p></article>
+          <article class="card seo-card"><h3><a href="seo-20260314-1143-openclaw-feishu-pairing-approve-code-expire.html">OpenClaw 飞书 pairing 怎么批准</a></h3><p>适合看配对码 1 小时有效期、pending 请求上限和 approve 之后怎么验证。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-1108-openclaw-feishu-allowfrom-groupallowfrom.html">OpenClaw Feishu allowFrom 怎么配</a></h3><p>适合看私聊白名单、<code>groupAllowFrom</code>、群成员白名单和 <code>open_id</code>/<code>chat_id</code> 怎么区分。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-0959-openclaw-feishu-group-require-mention.html">OpenClaw 飞书群里为什么不回复？</a></h3><p>适合看为什么要 @ 才回、<code>requireMention</code>、<code>allowFrom</code> 和群白名单怎么配。</p></article>
           <article class="card seo-card"><h3><a href="seo-20260314-0910-openclaw-chrome-extension-browser-relay.html">OpenClaw Chrome 扩展怎么接</a></h3><p>适合看 browser relay、attach tab、relay not reachable 和使用边界。</p></article>

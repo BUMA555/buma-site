@@ -3,19 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OpenClaw常见问题FAQ｜buma安装、接入与运营答疑</title>
-  <meta name="description" content="查看 OpenClaw 常见问题 FAQ，涵盖安装、飞书接入、工作流搭建与一人公司使用场景，方便先判断适不适合自己。" />
-  <meta name="keywords" content="OpenClaw FAQ,OpenClaw常见问题,OpenClaw安装,飞书接入,一人公司工作流" />
+  <title>OpenClaw 常见问题 FAQ｜飞书接入、权限、群聊触发与排障入口</title>
+  <meta name="description" content="OpenClaw 常见问题 FAQ，集中整理飞书接入、权限配置、群聊 @ 触发、Dashboard、Chrome 扩展与 cron 定时任务等高频问题，方便快速定位入口。" />
+  <meta name="keywords" content="OpenClaw FAQ,OpenClaw常见问题,OpenClaw飞书接入,OpenClaw权限,OpenClaw requireMention,OpenClaw Dashboard" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://buma555.github.io/buma-site/openclaw-faq.html" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="topbar"><div class="container nav"><a href="index.html"><img class="brandmark" src="assets-buma-logo.svg" alt="buma logo" /></a><div class="nav-right"><nav class="nav-links"><a href="index.html">首页</a><a href="seo.html">文章</a><a href="about.html">关于 buma</a><a href="solutions.html">解决方案</a><a href="openclaw-linyi-install.html">OpenClaw代装</a><a href="community.html">社群</a><a href="contact.html">联系 buma</a></nav><div class="contact-inline"><strong>电话：</strong>15550927555 <strong>微信：</strong>bm8150 <strong>坐标：</strong>山东临沂</div></div><a class="nav-cta" href="contact.html">预约咨询</a></div></header>
+<header class="topbar">
+  <div class="container nav">
+    <a href="index.html"><img class="brandmark" src="assets-buma-logo.svg" alt="buma logo" /></a>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="seo.html">文章</a>
+        <a href="about.html">关于 buma</a>
+        <a href="solutions.html">解决方案</a>
+        <a href="openclaw-linyi-install.html">OpenClaw代装</a>
+        <a href="community.html">社群</a>
+        <a href="contact.html">联系 buma</a>
+      </nav>
+      <div class="contact-inline"><strong>电话：</strong>15550927555 <strong>微信：</strong>bm8150 <strong>坐标：</strong>山东临沂</div>
+    </div>
+    <a class="nav-cta" href="contact.html">预约咨询</a>
+  </div>
+</header>
+
 <main>
-<section class="hero"><div class="container"><div class="eyebrow">OpenClaw FAQ</div><h1 class="section-title">OpenClaw 常见问题 FAQ：先把大家最常问的事讲清楚。</h1><p class="section-desc">这一页把安装、飞书接入、工作流搭建和一人公司使用中的高频问题集中整理，方便你先判断适不适合自己，再去看对应文章或直接沟通。完整文章聚合请看 <a href="seo.html">文章专题页</a>。</p></div></section>
-<section class="section"><div class="container grid-2"><article class="card case-card"><h3>安装类问题</h3><ul class="list"><li>OpenClaw 安装难不难？</li><li>Windows 能不能直接部署？</li><li>模型需要自己配置吗？</li><li>本地部署和云端部署怎么选？</li></ul><p><a href="seo-20260310-0952-jinan-openclaw-feishu.html">相关页面：济南 OpenClaw 飞书工作流</a></p><p><a href="seo-20260310-1052-qingdao-openclaw-deploy.html">相关页面：青岛 OpenClaw 本地部署</a></p><p><a href="seo-20260310-1152-linyi-openclaw-agent.html">相关页面：临沂 OpenClaw Agent 工作流</a></p><p><a href="seo-20260310-1253-yantai-openclaw-one-person.html">相关页面：烟台 OpenClaw 一人公司</a></p><p><a href="seo-20260310-1353-weifang-openclaw-feishu.html">相关页面：潍坊 OpenClaw 飞书</a></p><p><a href="seo-20260310-1453-zibo-openclaw-workflow.html">相关页面：淄博 OpenClaw 工作流</a></p><p><a href="seo-20260310-1553-weihai-openclaw-agent.html">相关页面：威海 OpenClaw Agent</a></p><p><a href="seo-20260310-1653-jining-openclaw-deploy.html">相关页面：济宁 OpenClaw 本地部署</a></p><p><a href="seo-20260310-1753-taian-openclaw-feishu.html">相关页面：泰安 OpenClaw 飞书</a></p><p><a href="seo-20260314-0135-linyi-openclaw-one-person-company.html">相关页面：临沂 OpenClaw 一人公司</a></p></article><article class="card case-card"><h3>使用类问题</h3><ul class="list"><li>怎么接飞书消息？</li><li>怎么做内容 Agent？</li><li>怎么围绕一人公司搭工作流？</li><li>网站和社群怎么和 Agent 配合？</li></ul><p><a href="seo-20260314-0145-jinan-ai-manju-startup.html">相关页面：济南 AI漫剧创业</a></p><p><a href="seo-20260314-0155-qingdao-3d-manju-income.html">相关页面：青岛 3D漫剧收益</a></p><p><a href="seo-20260314-0205-yantai-high-pay-manju-writer.html">相关页面：烟台高薪漫剧编剧</a></p><p><a href="seo-20260314-0215-weifang-lobster-ai-marketing.html">相关页面：潍坊龙虾 AI营销</a></p><p><a href="seo-20260314-0225-zibo-manju-entrepreneurship.html">相关页面：淄博漫剧创业工作流</a></p></article></div></section>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">OpenClaw FAQ</div>
+      <h1 class="section-title">OpenClaw 常见问题 FAQ：先按你卡住的那一步找入口。</h1>
+      <p class="section-desc">这页不再堆旧链接，而是把现在最常见的 OpenClaw 问题重新归类：飞书怎么接、权限为什么不生效、群里为什么要 <code>@</code> 才回、Dashboard 为什么打不开、Chrome 扩展为什么挂着感叹号、定时任务怎么跑。你可以先快速定位问题，再进入对应正文继续看。</p>
+      <div class="button-row hero-actions">
+        <a class="btn-primary" href="seo.html">去文章中心</a>
+        <a class="btn-secondary" href="contact.html">直接沟通当前问题</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-header left">
+        <div class="eyebrow">Quick Paths</div>
+        <h2 class="section-title">按问题直达</h2>
+        <p class="section-desc">如果你现在已经卡住了，就别从头翻了，直接进对应问题页。先把入口找对，排查速度会快很多。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card seo-card"><h3><a href="seo-20260314-0741-openclaw-feishu-bot-setup.html">飞书接入从哪开始</a></h3><p>适合第一次接 OpenClaw + 飞书，先看应用、凭证、Gateway、测试顺序。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0900-openclaw-feishu-bot-permissions.html">权限都开了，为什么还是不工作</a></h3><p>适合排查 <code>im.message.receive_v1</code>、发送权限、发布状态和 Bot 能力边界。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0959-openclaw-feishu-group-require-mention.html">飞书群里为什么不回复</a></h3><p>适合排查为什么要 <code>@</code> 才回、<code>groupPolicy</code>、<code>requireMention</code> 和触发范围。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0835-openclaw-feishu-websocket-pairing.html">长连接、配对码、群聊触发不通</a></h3><p>适合排查 WebSocket、pairing 审批、群聊白名单和事件订阅。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0910-openclaw-chrome-extension-browser-relay.html">Chrome 扩展显示 ! 或 attach tab 没反应</a></h3><p>适合排查 browser relay、<code>chrome</code> profile、ON 徽章和 relay 地址。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0920-openclaw-dashboard-gateway-status.html">Dashboard 打不开、1008、unauthorized</a></h3><p>适合先拆清控制台地址、<code>gateway status</code>、鉴权和配对问题。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header left">
+        <div class="eyebrow">Top Questions</div>
+        <h2 class="section-title">最常见的 4 类 FAQ</h2>
+        <p class="section-desc">最近高频问题基本都集中在这 4 类。先看自己属于哪一类，再继续深挖。</p>
+      </div>
+      <div class="grid-2">
+        <article class="card case-card">
+          <h3>1. 接入类：到底应该先做什么</h3>
+          <ul class="list">
+            <li>先确认 Node、Gateway 和 Dashboard 正常。</li>
+            <li>再创建飞书应用、填 App ID / Secret。</li>
+            <li>然后核对事件订阅、Bot 权限和 pairing。</li>
+            <li>最后再去看群聊规则、定时任务和协作链路。</li>
+          </ul>
+          <p><a href="seo-20260314-0741-openclaw-feishu-bot-setup.html">先看：OpenClaw 飞书机器人接入清单</a></p>
+        </article>
+        <article class="card case-card">
+          <h3>2. 权限类：看起来都开了，为什么还是发不出去</h3>
+          <ul class="list">
+            <li>常见不是“没开权限”，而是开错位置或版本没发布。</li>
+            <li>飞书事件订阅、Bot 能力和消息发送权限要一起看。</li>
+            <li>群聊里能不能回，还会受 <code>groupPolicy</code> 和 <code>allowFrom</code> 影响。</li>
+            <li>排查时别只盯一个报错，要把权限、发布状态和触发链路一起看。</li>
+          </ul>
+          <p><a href="seo-20260314-0900-openclaw-feishu-bot-permissions.html">先看：OpenClaw 飞书机器人权限清单</a></p>
+        </article>
+        <article class="card case-card">
+          <h3>3. 群聊类：为什么私聊能回，群里却经常没反应</h3>
+          <ul class="list">
+            <li>默认安全策略通常比想象中更严格。</li>
+            <li>很多场景下群聊就是要求明确 <code>@</code>，避免误触发。</li>
+            <li>pairing 没通过、群未放行、触发人不在白名单，也会像“没回复”。</li>
+            <li>这类问题要同时看 <code>requireMention</code>、<code>groupPolicy</code> 和 <code>allowFrom</code>。</li>
+          </ul>
+          <p><a href="seo-20260314-0959-openclaw-feishu-group-require-mention.html">先看：OpenClaw 飞书群里为什么不回复</a></p>
+        </article>
+        <article class="card case-card">
+          <h3>4. 控制台与自动化类：页面打不开、定时任务不触发</h3>
+          <ul class="list">
+            <li>Dashboard 问题先拆成服务状态、鉴权、配对三层。</li>
+            <li>Chrome 扩展问题先拆成 relay、attach tab、profile 三层。</li>
+            <li>cron 问题先拆成 sessionTarget、payload 和触发时间语义。</li>
+            <li>别把所有报错混成一个问题看，分层后更容易处理。</li>
+          </ul>
+          <p><a href="seo-20260314-0920-openclaw-dashboard-gateway-status.html">先看：OpenClaw Dashboard 打不开怎么办</a></p>
+          <p><a href="seo-20260314-0808-openclaw-cron-reminder-guide.html">延伸：OpenClaw 定时任务怎么配</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-header left">
+        <div class="eyebrow">Related Reading</div>
+        <h2 class="section-title">继续往下看什么</h2>
+        <p class="section-desc">如果你不是只想排 1 个点，而是想把 OpenClaw 的接入、协同和使用链路整体看清，可以沿着这条顺序看。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card seo-card"><h3><a href="seo-20260314-0741-openclaw-feishu-bot-setup.html">第 1 步：飞书机器人接入清单</a></h3><p>先把接入顺序、基础配置和第一轮测试跑通。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0835-openclaw-feishu-websocket-pairing.html">第 2 步：长连接与 pairing</a></h3><p>把消息为什么进不来、配对为什么卡住看明白。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0900-openclaw-feishu-bot-permissions.html">第 3 步：权限与事件订阅</a></h3><p>把“有配置但不生效”的高频误区一次理顺。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0959-openclaw-feishu-group-require-mention.html">第 4 步：群聊触发规则</a></h3><p>把为什么经常要 <code>@</code> 才回、哪些人能触发讲清楚。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0910-openclaw-chrome-extension-browser-relay.html">第 5 步：浏览器中继</a></h3><p>需要网页操作时，再去看 Chrome 扩展和 attach tab 的边界。</p></article>
+        <article class="card seo-card"><h3><a href="seo-20260314-0808-openclaw-cron-reminder-guide.html">第 6 步：提醒与定时任务</a></h3><p>接入跑通后，再补自动化和提醒策略，避免一开始就把链路搞复杂。</p></article>
+      </div>
+    </div>
+  </section>
 </main>
+
 <footer class="footer"><div class="container footer-line"><span>buma</span><span>OpenClaw FAQ</span></div></footer>
 </body>
 </html>

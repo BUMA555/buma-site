@@ -5,10 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OpenClaw 常见问题 FAQ｜飞书接入、Dashboard、Gateway 与排障入口</title>
   <meta name="description" content="OpenClaw 常见问题 FAQ，集中整理飞书接入、权限配置、群聊 @ 触发、Dashboard、Gateway、日志排查、Chrome 扩展与 cron 定时任务等高频问题，方便快速定位入口。" />
-  <meta name="keywords" content="OpenClaw FAQ,OpenClaw常见问题,OpenClaw飞书接入,OpenClaw权限,OpenClaw requireMention,OpenClaw Dashboard,OpenClaw Gateway,OpenClaw logs" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://buma555.github.io/buma-site/openclaw-faq.html" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "飞书接入从哪开始？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "建议先完成飞书应用、凭证、Gateway 和测试顺序的最小链路，再继续看权限、事件订阅和群聊触发边界。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "为什么群里要 @ 才回复？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通常需要优先检查 requireMention、groupPolicy、群聊触发范围和白名单边界，避免把群策略问题误判成接入问题。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dashboard 打不开或 Gateway 起不来怎么办？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "应先检查 dashboard 地址、gateway status、鉴权、pairing、日志与端口占用，再区分是控制台问题还是消息接入问题。"
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
 <header class="topbar">

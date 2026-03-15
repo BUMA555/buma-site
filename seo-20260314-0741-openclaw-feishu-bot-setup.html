@@ -5,10 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OpenClaw 飞书机器人接入清单｜从创建应用到消息测试，先把能跑通的闭环接起来</title>
   <meta name="description" content="基于 OpenClaw Getting Started、Feishu 渠道文档与 FAQ 公开资料整理，讲清 OpenClaw 飞书机器人接入清单、权限配置、WebSocket 事件订阅、pairing 配对、群聊策略与常见坑，适合一人公司和小团队先跑最小闭环。" />
-  <meta name="keywords" content="OpenClaw飞书,OpenClaw飞书机器人,OpenClaw Feishu,飞书机器人接入清单,Feishu WebSocket事件订阅,OpenClaw pairing" />
   <meta name="robots" content="index,follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="OpenClaw 飞书机器人接入清单｜从创建应用到消息测试，先把能跑通的闭环接起来" />
+  <meta property="og:description" content="讲清 OpenClaw 飞书机器人接入清单、权限配置、WebSocket 事件订阅、pairing 配对与群聊策略。" />
+  <meta property="og:url" content="https://buma555.github.io/buma-site/seo-20260314-0741-openclaw-feishu-bot-setup.html" />
+  <meta property="og:image" content="https://buma555.github.io/buma-site/assets-og-openclaw-feishu-guide.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OpenClaw 飞书机器人接入清单｜从创建应用到消息测试，先把能跑通的闭环接起来" />
+  <meta name="twitter:description" content="讲清 OpenClaw 飞书机器人接入清单、权限配置、WebSocket 事件订阅、pairing 配对与群聊策略。" />
+  <meta name="twitter:image" content="https://buma555.github.io/buma-site/assets-og-openclaw-feishu-guide.svg" />
   <link rel="canonical" href="https://buma555.github.io/buma-site/seo-20260314-0741-openclaw-feishu-bot-setup.html" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "OpenClaw 飞书机器人接入清单｜从创建应用到消息测试，先把能跑通的闭环接起来",
+      "description": "讲清 OpenClaw 飞书机器人接入清单、权限配置、WebSocket 事件订阅、pairing 配对、群聊策略与常见坑。",
+      "datePublished": "2026-03-14",
+      "dateModified": "2026-03-16",
+      "author": {"@type": "Organization", "name": "BUMA 内容组"},
+      "publisher": {"@type": "Organization", "name": "BUMA", "url": "https://buma555.github.io/buma-site/"},
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://buma555.github.io/buma-site/seo-20260314-0741-openclaw-feishu-bot-setup.html"},
+      "image": "https://buma555.github.io/buma-site/assets-og-openclaw-feishu-guide.svg"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://buma555.github.io/buma-site/"},
+        {"@type": "ListItem", "position": 2, "name": "文章中心", "item": "https://buma555.github.io/buma-site/seo.html"},
+        {"@type": "ListItem", "position": 3, "name": "OpenClaw 飞书机器人接入清单", "item": "https://buma555.github.io/buma-site/seo-20260314-0741-openclaw-feishu-bot-setup.html"}
+      ]
+    }
+  </script>
 </head>
 <body>
   <header class="topbar">
@@ -35,6 +68,11 @@
         <div class="eyebrow">OpenClaw · Feishu · Setup Checklist</div>
         <h1 class="section-title">OpenClaw 飞书机器人接入清单：从创建应用到消息测试，先把能跑通的闭环接起来。</h1>
         <p class="section-desc">如果你正在搜 OpenClaw 飞书、OpenClaw Feishu、飞书机器人接入、OpenClaw pairing 或 WebSocket 事件订阅，通常不是在看热闹，而是已经进入“我想把消息接到工作流里”的阶段。这篇内容基于 OpenClaw 官方 Getting Started、Feishu 渠道文档和 FAQ 公开资料整理，目的是把最关键的顺序讲清楚：先确认运行底座，再创建飞书应用，再补权限和事件订阅，最后做消息测试与配对批准。这样做的好处是少走弯路，也更适合一人公司、小团队和内容协同场景先跑最小闭环。</p>
+        <div class="article-meta">
+          <span>发布时间：2026-03-14</span>
+          <span>作者：BUMA 内容组</span>
+          <span>适合人群：一人公司 / 小团队</span>
+        </div>
         <div class="button-row hero-actions">
           <a class="btn-primary" href="contact.html">咨询接入顺序</a>
           <a class="btn-secondary" href="seo.html">返回文章中心</a>

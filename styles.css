@@ -835,13 +835,20 @@ section {
   gap: 10px;
 }
 
-.hero-points span {
+.hero-points span,
+.hero-points a {
   padding: 10px 14px;
   border-radius: 999px;
   font-size: 13px;
   color: var(--text-secondary);
   background: rgba(15, 23, 42, 0.8);
   border: 1px solid rgba(124, 92, 255, 0.18);
+  text-decoration: none;
+}
+
+.hero-points a:hover {
+  color: var(--heading-color);
+  border-color: rgba(110, 159, 255, 0.34);
 }
 
 .hero-visual {

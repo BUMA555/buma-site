@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://buma555.github.io/buma-site/</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://buma555.github.io/buma-site/about.html</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://buma555.github.io/buma-site/seo.html</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -409,6 +409,42 @@
   <url>
     <loc>https://buma555.github.io/buma-site/seo-20260321-0040-one-person-company-faq-consultation-bridge.html</loc>
     <lastmod>2026-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buma555.github.io/buma-site/seo-20260321-2105-one-person-company-content-strategy-ai-7-steps.html</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buma555.github.io/buma-site/seo-20260321-2205-one-person-company-service-process-blueprint.html</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buma555.github.io/buma-site/seo-20260321-2303-one-person-company-about-page-copy-conversion.html</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buma555.github.io/buma-site/seo-20260322-0104-one-person-company-pricing-page-conversion.html</loc>
+    <lastmod>2026-03-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buma555.github.io/buma-site/seo-20260322-0203-one-person-company-case-study-page-conversion.html</loc>
+    <lastmod>2026-03-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buma555.github.io/buma-site/seo-20260322-0258-one-person-company-service-page-conversion.html</loc>
+    <lastmod>2026-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

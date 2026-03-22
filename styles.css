@@ -1165,6 +1165,37 @@ section {
   line-height: 1.75;
 }
 
+.case-kicker {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  background: rgba(124, 92, 255, 0.12);
+  border: 1px solid rgba(124, 92, 255, 0.2);
+}
+
+.case-outcomes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 14px;
+}
+
+.case-outcomes span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-color);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
 .section {
   padding: 80px 0;
 }
@@ -1501,5 +1532,81 @@ section {
   .footer-line {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+.section-fit-boundary {
+  background: linear-gradient(180deg, rgba(15, 22, 36, 0.9), rgba(11, 15, 26, 1));
+}
+
+.fit-boundary-grid {
+  align-items: stretch;
+}
+
+.fit-boundary-card {
+  height: 100%;
+  padding-top: 28px;
+}
+
+.fit-boundary-card-positive {
+  border: 1px solid rgba(91, 227, 180, 0.22);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+}
+
+.fit-boundary-card-muted {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(18, 24, 38, 0.82);
+}
+
+.fit-boundary-label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--heading-color);
+  background: rgba(124, 92, 255, 0.18);
+  border: 1px solid rgba(124, 92, 255, 0.28);
+}
+
+.fit-boundary-card-positive .fit-boundary-label {
+  background: rgba(91, 227, 180, 0.16);
+  border-color: rgba(91, 227, 180, 0.3);
+}
+
+.fit-boundary-list {
+  margin-top: 16px;
+}
+
+.fit-boundary-list li + li {
+  margin-top: 10px;
+}
+
+.fit-boundary-note {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(124, 92, 255, 0.18);
+  background: rgba(124, 92, 255, 0.08);
+  color: var(--text-secondary);
+}
+
+.fit-boundary-note strong {
+  color: var(--heading-color);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .fit-boundary-note {
+    flex-direction: column;
+  }
+
+  .fit-boundary-note strong {
+    white-space: normal;
   }
 }

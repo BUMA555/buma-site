@@ -152,7 +152,34 @@
     </div>
   </section>
 
-  <section class="section section-soft">
+  <section class="section">
+    <div class="container">
+      <div class="section-header left">
+        <div class="eyebrow">First 10 Minutes</div>
+        <h2 class="section-title">先做 3 个快速检查，排查会快很多</h2>
+        <p class="section-desc">参考 Stripe / OpenAI Help Center 的“先分入口、再细化问题”写法，把最容易漏掉的三步前置，先判断是不是入口问题。</p>
+      </div>
+      <div class="trust-strip">
+        <article class="trust-item">
+          <strong>1. 先确认 Gateway 是否在线</strong>
+          <span>Dashboard 打不开、unauthorized 多数与 gateway / 鉴权有关。</span>
+        </article>
+        <article class="trust-item">
+          <strong>2. 先确认群聊触发边界</strong>
+          <span><code>requireMention</code> / <code>groupPolicy</code> 配置不对，会表现为“群里不回”。</span>
+        </article>
+        <article class="trust-item">
+          <strong>3. 先确认配对与事件订阅</strong>
+          <span>pairing 未审批或事件未订阅，消息就收不到。</span>
+        </article>
+      </div>
+      <div class="button-row hero-actions" style="margin-top: 20px;">
+        <a class="btn-primary" href="#quick-paths">做完检查，按问题直达</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="quick-paths">
     <div class="container">
       <div class="section-header left">
         <div class="eyebrow">Quick Paths</div>

@@ -1,4 +1,4 @@
-/* BUMA 官网样式 - 基于 Jasper.ai 设计风格 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
   --primary-color: #7C5CFF;
@@ -855,17 +855,6 @@ section {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-.hero-v2-title {
-  max-width: 10.5em;
-  font-size: clamp(48px, 6vw, 82px);
-  font-weight: 400;
-  line-height: 1.15;
-  letter-spacing: normal;
-  margin-bottom: 22px;
-  color: rgb(255, 255, 255);
-}
 }
 
 .hero-v2-title span {

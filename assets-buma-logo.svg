@@ -1,9 +1,28 @@
-<svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Icon: stylized "b" made of two rounded rects -->
-  <rect x="2" y="4" width="20" height="32" rx="6" fill="none" stroke="#F97316" stroke-width="2.5"/>
-  <rect x="2" y="4" width="20" height="14" rx="6" fill="none" stroke="#F97316" stroke-width="2.5"/>
-  <!-- Orange dot accent -->
-  <circle cx="28" cy="36" r="3.5" fill="#F97316"/>
-  <!-- Text: buma — clean sans -->
-  <text x="40" y="28" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="400" letter-spacing="0.08em" fill="#ffffff">buma</text>
+<svg width="160" height="44" viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background pill for icon area -->
+  <rect x="2" y="2" width="40" height="40" rx="12" fill="#F97316" fill-opacity="0.12"/>
+  <rect x="2" y="2" width="40" height="40" rx="12" stroke="#F97316" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- Stylized "b" using paths -->
+  <path d="M14 14C14 11.7909 15.7909 10 18 10H26C31.5228 10 36 14.4772 36 20C36 25.5228 31.5228 30 26 30H22V32" stroke="#F97316" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 19H26C28.2091 19 30 20.7909 30 23C30 25.2091 28.2091 27 26 27H22V19Z" fill="#F97316" fill-opacity="0.25"/>
+  <circle cx="18" cy="32" r="2" fill="#F97316"/>
+  <!-- "buma" text as paths for reliability -->
+  <!-- b -->
+  <path d="M54 32V14H50C47.8 14 46 15.8 46 18V26C46 28.2 47.8 30 50 30H54" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- u -->
+  <path d="M60 14V26C60 28.2 61.8 30 64 30C66.2 30 68 28.2 68 26V14H64" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- m -->
+  <path d="M72 14V26C72 28.2 73.8 30 76 30C78.2 30 80 28.2 80 26V14H76" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M84 14V26C84 28.2 85.8 30 88 30C90.2 30 92 28.2 92 26V14H88" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- a -->
+  <path d="M98 22C98 19.8 99.8 18 102 18C104.2 18 106 19.8 106 22C106 24.2 104.2 26 102 26H98V30" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M102 18C104.2 18 106 19.8 106 22C106 24.2 104.2 26 102 26" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Gradient underline accent -->
+  <rect x="54" y="34" width="52" height="2" rx="1" fill="url(#logoGrad)"/>
+  <defs>
+    <linearGradient id="logoGrad" x1="54" y1="35" x2="106" y2="35" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F97316"/>
+      <stop offset="1" stop-color="#fb923c"/>
+    </linearGradient>
+  </defs>
 </svg>

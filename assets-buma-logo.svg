@@ -1,28 +1,40 @@
 <svg width="160" height="44" viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background pill for icon area -->
-  <rect x="2" y="2" width="40" height="40" rx="12" fill="#F97316" fill-opacity="0.12"/>
-  <rect x="2" y="2" width="40" height="40" rx="12" stroke="#F97316" stroke-width="1.5" stroke-opacity="0.6"/>
-  <!-- Stylized "b" using paths -->
-  <path d="M14 14C14 11.7909 15.7909 10 18 10H26C31.5228 10 36 14.4772 36 20C36 25.5228 31.5228 30 26 30H22V32" stroke="#F97316" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M22 19H26C28.2091 19 30 20.7909 30 23C30 25.2091 28.2091 27 26 27H22V19Z" fill="#F97316" fill-opacity="0.25"/>
-  <circle cx="18" cy="32" r="2" fill="#F97316"/>
-  <!-- "buma" text as paths for reliability -->
+  <!-- Icon area: rounded square with blue gradient -->
+  <rect x="2" y="2" width="40" height="40" rx="12" fill="url(#iconBg)"/>
+  <!-- Stylized "b" — two overlapping rounded rects with gradient -->
+  <rect x="11" y="12" width="12" height="20" rx="5" fill="url(#iconGrad)" fill-opacity="0.35" stroke="url(#iconGrad)" stroke-width="1.8"/>
+  <rect x="11" y="12" width="12" height="10" rx="5" fill="url(#iconGrad)" fill-opacity="0.6" stroke="url(#iconGrad)" stroke-width="1.8"/>
+  <!-- b stem -->
+  <line x1="23" y1="17" x2="23" y2="28" stroke="url(#iconGrad)" stroke-width="2" stroke-linecap="round"/>
+  <!-- dot accent top-right -->
+  <circle cx="34" cy="14" r="2.5" fill="url(#iconGrad)" fill-opacity="0.7"/>
+  <!-- "buma" text — clean geometric letterforms with blue gradient -->
   <!-- b -->
-  <path d="M54 32V14H50C47.8 14 46 15.8 46 18V26C46 28.2 47.8 30 50 30H54" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M52 30V13C52 11.3 53.3 10 55 10H61C65.4 10 69 13.6 69 18C69 22.4 65.4 26 61 26H55V30H52Z" fill="url(#textGrad)"/>
+  <ellipse cx="61" cy="18" rx="2" ry="2" fill="url(#textGrad)"/>
   <!-- u -->
-  <path d="M60 14V26C60 28.2 61.8 30 64 30C66.2 30 68 28.2 68 26V14H64" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M73 13V24C73 26.2 74.8 28 77 28C79.2 28 81 26.2 81 24V13H77" stroke="url(#textGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   <!-- m -->
-  <path d="M72 14V26C72 28.2 73.8 30 76 30C78.2 30 80 28.2 80 26V14H76" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
-  <path d="M84 14V26C84 28.2 85.8 30 88 30C90.2 30 92 28.2 92 26V14H88" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M87 13V24C87 26.2 88.8 28 91 28C93.2 28 95 26.2 95 24V13H91" stroke="url(#textGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M95 13V24C95 26.2 96.8 28 99 28C101.2 28 103 26.2 103 24V13H99" stroke="url(#textGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   <!-- a -->
-  <path d="M98 22C98 19.8 99.8 18 102 18C104.2 18 106 19.8 106 22C106 24.2 104.2 26 102 26H98V30" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
-  <path d="M102 18C104.2 18 106 19.8 106 22C106 24.2 104.2 26 102 26" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
-  <!-- Gradient underline accent -->
-  <rect x="54" y="34" width="52" height="2" rx="1" fill="url(#logoGrad)"/>
+  <path d="M115 14C115 11.8 116.8 10 119 10C121.2 10 123 11.8 123 14C123 16.2 121.2 18 119 18H115V28" stroke="url(#textGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M119 18C121.2 18 123 19.8 123 22C123 24.2 121.2 26 119 26" stroke="url(#textGrad)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Gradient definitions -->
   <defs>
-    <linearGradient id="logoGrad" x1="54" y1="35" x2="106" y2="35" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F97316"/>
-      <stop offset="1" stop-color="#fb923c"/>
+    <linearGradient id="iconBg" x1="2" y1="2" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a1a3a"/>
+      <stop offset="1" stop-color="#0a0a20"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="8" y1="8" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5CFF"/>
+      <stop offset="0.5" stop-color="#5CC8FF"/>
+      <stop offset="1" stop-color="#5BE3B4"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="50" y1="10" x2="124" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCE7FF"/>
+      <stop offset="0.4" stop-color="#9EB9FF"/>
+      <stop offset="1" stop-color="#8F86FF"/>
     </linearGradient>
   </defs>
 </svg>

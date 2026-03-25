@@ -1,14 +1,13 @@
 <svg width="160" height="44" viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Icon area: rounded square with blue gradient -->
+  <!-- Icon area: rounded square with dark blue background -->
   <rect x="2" y="2" width="40" height="40" rx="12" fill="url(#iconBg)"/>
-  <!-- Stylized "b" — two overlapping rounded rects with gradient -->
-  <rect x="11" y="12" width="12" height="20" rx="5" fill="url(#iconGrad)" fill-opacity="0.35" stroke="url(#iconGrad)" stroke-width="1.8"/>
-  <rect x="11" y="12" width="12" height="10" rx="5" fill="url(#iconGrad)" fill-opacity="0.6" stroke="url(#iconGrad)" stroke-width="1.8"/>
-  <!-- b stem -->
+  <!-- Stylized "b" — layered rounded rects with blue gradient -->
+  <rect x="11" y="12" width="12" height="20" rx="5" fill="url(#iconGrad)" fill-opacity="0.3" stroke="url(#iconGrad)" stroke-width="1.8"/>
+  <rect x="11" y="12" width="12" height="10" rx="5" fill="url(#iconGrad)" fill-opacity="0.55" stroke="url(#iconGrad)" stroke-width="1.8"/>
   <line x1="23" y1="17" x2="23" y2="28" stroke="url(#iconGrad)" stroke-width="2" stroke-linecap="round"/>
-  <!-- dot accent top-right -->
+  <!-- Small dot accent -->
   <circle cx="34" cy="14" r="2.5" fill="url(#iconGrad)" fill-opacity="0.7"/>
-  <!-- "buma" text — clean geometric letterforms with blue gradient -->
+  <!-- "buma" as clean letter paths with blue gradient -->
   <!-- b -->
   <path d="M52 30V13C52 11.3 53.3 10 55 10H61C65.4 10 69 13.6 69 18C69 22.4 65.4 26 61 26H55V30H52Z" fill="url(#textGrad)"/>
   <ellipse cx="61" cy="18" rx="2" ry="2" fill="url(#textGrad)"/>
@@ -23,8 +22,8 @@
   <!-- Gradient definitions -->
   <defs>
     <linearGradient id="iconBg" x1="2" y1="2" x2="42" y2="42" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1a1a3a"/>
-      <stop offset="1" stop-color="#0a0a20"/>
+      <stop stop-color="#0e1629"/>
+      <stop offset="1" stop-color="#0a1020"/>
     </linearGradient>
     <linearGradient id="iconGrad" x1="8" y1="8" x2="40" y2="40" gradientUnits="userSpaceOnUse">
       <stop stop-color="#7C5CFF"/>

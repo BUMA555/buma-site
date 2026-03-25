@@ -6,7 +6,6 @@
   <title>OpenClaw 飞书机器人怎么接｜一人公司把官网咨询接成 AI 助理的 6 步</title>
   <meta name="description" content="基于 OpenClaw 官方 README 与 Clawdbot 飞书文档，整理一人公司把官网咨询接入飞书的最小可执行链路：安装、飞书应用、事件订阅、网关检查、分流与人工接手。" />
   <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#0b0f1a" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="OpenClaw 飞书机器人怎么接｜一人公司把官网咨询接成 AI 助理的 6 步" />
   <meta property="og:description" content="把官网咨询接入飞书的最小可执行链路：安装、飞书应用、事件订阅、网关检查、分流与人工接手。" />
@@ -68,46 +67,6 @@
       ]
     }
   </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "需要暴露公网 webhook 吗？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "不需要。Clawdbot 文档明确说明飞书通道走 WebSocket 事件订阅，不必暴露公共 webhook URL，这对一人公司更友好。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "消息收不到时先查哪一步？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "先查飞书事件订阅是否包含 im.message.receive_v1，再看 openclaw gateway status 是否正常，最后用 openclaw logs --follow 观察事件是否进入。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "AI 助理会不会抢走人工沟通？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "不会。你可以明确分流规则：基础问题由 AI 先答，高意向问题转人工或直接给联系方式。关键是下一步动作要清楚。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "一人公司最容易忽略什么？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "最容易忽略的是下一步动作。只答问题不引导继续阅读、预约或沟通，咨询就会停在原地，转化也会停住。"
-          }
-        }
-      ]
-    }
-  </script>
 </head>
 <body>
   <header class="topbar">
@@ -137,11 +96,6 @@
           <span>发布时间：2026-03-15</span>
           <span>作者：小马Content Agent</span>
           <span>适合人群：一人公司 / 小团队</span>
-        </div>
-        <div class="button-row hero-actions">
-          <a class="btn-primary" href="contact.html">先梳理你的飞书承接链路</a>
-          <a class="btn-secondary" href="openclaw-faq.html">先查 OpenClaw FAQ</a>
-          <a class="btn-secondary" href="seo.html">返回文章中心</a>
         </div>
       </div>
     </section>
@@ -264,7 +218,7 @@
       </div>
     </section>
 
-    <section class="section" id="faq-core">
+    <section class="section">
       <div class="container">
         <div class="section-header left">
           <div class="eyebrow">FAQ</div>

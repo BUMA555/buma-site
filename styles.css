@@ -225,7 +225,10 @@ p  { color: var(--text-secondary); line-height: 1.7; }
   align-items: center;
 }
 
-.hero-v2-copy { max-width: 520px; }
+.hero-v2-copy {
+  max-width: 520px;
+  position: relative;
+}
 
 /* ── About Page Hero (hero-home) ────────────────────── */
 .hero-home {
@@ -813,6 +816,95 @@ p  { color: var(--text-secondary); line-height: 1.7; }
   color: rgba(255,255,255,0.3);
 }
 
+/* ── Trust Metrics Strip ─────────────────────────────── */
+.trust-strip {
+  background: #1a1a1a;
+  border-top: 0.8px solid rgba(255,255,255,0.12);
+  border-bottom: 0.8px solid rgba(255,255,255,0.12);
+  padding: 28px 0;
+  margin: 0;
+}
+.trust-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.trust-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  text-align: center;
+}
+.trust-number {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.trust-label {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 4px;
+  letter-spacing: 0.04em;
+}
+.trust-divider {
+  width: 0.8px;
+  height: 40px;
+  background: rgba(255,255,255,0.15);
+  flex-shrink: 0;
+}
+
+/* ── Trust Bar Section (Solutions/Index style) ─────────────────── */
+.trust-bar-section {
+  background: rgba(12, 18, 30, 0.75);
+  border-top: 0.8px solid rgba(255,255,255,0.12);
+  border-bottom: 0.8px solid rgba(255,255,255,0.12);
+  padding: 22px 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.trust-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.trust-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 28px;
+}
+.trust-bar-num {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+.trust-bar-label {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.01em;
+}
+.trust-bar-label-plain {
+  color: rgba(255,255,255,0.6);
+}
+.trust-bar-sep {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.2);
+  user-select: none;
+  padding: 0 4px;
+}
+.trust-bar-icon {
+  display: flex;
+  align-items: center;
+}
+
 /* ── Responsive ─────────────────────────────────────── */
 @media (max-width: 900px) {
   .hero-v2-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -829,5 +921,12 @@ p  { color: var(--text-secondary); line-height: 1.7; }
   .mobile-quick-bar { display: flex; }
   .promise-sep { display: none; }
   .promise-bar-inner { gap: 16px; }
+  .trust-metric { padding: 0 20px; }
+  .trust-number { font-size: 1.5rem; }
+  .trust-strip-inner { gap: 16px; flex-wrap: wrap; }
+  .trust-divider { display: none; }
+  .trust-bar { gap: 4px; justify-content: flex-start; }
+  .trust-bar-item { padding: 6px 12px; }
+  .trust-bar-sep { display: none; }
   body { padding-bottom: 64px; }
 }

@@ -3,186 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>联系 BUMA｜先做 15 分钟适配判断，再决定要不要继续聊</title>
-  <meta name="description" content="联系 BUMA，适合咨询一人公司官网转化、OpenClaw 部署、飞书接入、内容生产和客户承接。默认工作日 24 小时内回应，信息完整时通常 12 小时内给到初步判断。" />
+  <title>联系 BUMA｜先把你最卡的那一步发来</title>
+  <meta name="description" content="联系 BUMA。适合咨询一人公司官网转化、联系页优化、内容承接、OpenClaw 部署、飞书接入与执行流程梳理。默认工作日 24 小时内回应。" />
   <meta name="robots" content="index,follow" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="联系 BUMA｜先做 15 分钟适配判断，再决定要不要继续聊" />
-  <meta property="og:description" content="不是先聊一堆抽象方案，而是先判断最该先做的 1 页、1 条流程或 1 个接入动作。" />
+  <meta property="og:title" content="联系 BUMA｜先把你最卡的那一步发来" />
+  <meta property="og:description" content="不是先聊一堆大词，而是先判断你现在最该先动哪 1 页、哪 1 条流程、哪 1 个接入动作。" />
   <meta property="og:url" content="https://buma.cc.cd/contact.html" />
   <link rel="canonical" href="https://buma.cc.cd/contact.html" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .contact-hero-meta,
-    .contact-proof-list,
-    .contact-resource-list,
-    .contact-fit-list,
-    .contact-response-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .contact-hero-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-    .contact-hero-meta li,
-    .contact-proof-list li,
-    .contact-resource-list li,
-    .contact-fit-list li,
-    .contact-response-list li {
-      color: rgba(255,255,255,0.68);
-      line-height: 1.75;
-    }
-    .contact-hero-meta li {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      font-size: 13px;
-    }
-    .contact-response-band {
-      background: rgba(79,142,247,0.08);
-      border: 1px solid rgba(79,142,247,0.18);
-      border-radius: 18px;
-      padding: 20px 22px;
-      margin-top: 24px;
-    }
-    .contact-response-band h3,
-    .contact-proof-card h3,
-    .contact-resource-card h3,
-    .contact-fit-card h3,
-    .contact-faq-card h3 {
-      color: #fff;
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-    .contact-response-band p,
-    .contact-proof-card p,
-    .contact-resource-card p,
-    .contact-fit-card p,
-    .contact-faq-card p {
-      color: rgba(255,255,255,0.6);
-      line-height: 1.75;
-      margin-bottom: 10px;
-    }
-    .contact-proof-list li,
-    .contact-resource-list li,
-    .contact-fit-list li,
-    .contact-response-list li {
-      position: relative;
-      padding-left: 16px;
-      margin-bottom: 8px;
-    }
-    .contact-proof-list li::before,
-    .contact-resource-list li::before,
-    .contact-fit-list li::before,
-    .contact-response-list li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #7eb6ff;
-    }
-    .contact-proof-card,
-    .contact-resource-card,
-    .contact-fit-card,
-    .contact-faq-card {
-      padding: 24px;
-    }
-    .contact-step-card {
-      padding: 24px;
-      height: 100%;
-    }
-    .contact-step-kicker {
-      color: #7eb6ff;
-      font-size: 12px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-    .contact-step-card h3 {
-      color: #fff;
-      margin-bottom: 8px;
-      font-size: 18px;
-    }
-    .contact-step-card p {
-      color: rgba(255,255,255,0.6);
-      line-height: 1.75;
-    }
-    .contact-primary-note {
-      margin-top: 12px;
-      color: rgba(255,255,255,0.42);
-      font-size: 13px;
-    }
-    .contact-muted-link {
-      color: #7eb6ff;
-      text-decoration: none;
-    }
-    .contact-muted-link:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 900px) {
-      .contact-hero-meta {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
+    .contact-wrap{max-width:1120px;margin:0 auto;padding:0 20px 64px;}
+    .contact-hero{padding:56px 0 20px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:24px;align-items:start;}
+    .contact-hero h1{margin:8px 0 14px;font-size:42px;line-height:1.15;color:#fff;}
+    .contact-hero p{color:rgba(255,255,255,.68);line-height:1.8;margin:0;}
+    .contact-badge,.mini-kicker{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#7eb6ff;}
+    .contact-points{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;padding:0;list-style:none;}
+    .contact-points li{padding:8px 12px;border:1px solid rgba(255,255,255,.08);border-radius:999px;background:rgba(255,255,255,.04);font-size:13px;color:rgba(255,255,255,.74);}
+    .contact-panel,.contact-card{background:#111827;border:1px solid #1f2a44;border-radius:18px;padding:22px;}
+    .contact-panel h3,.contact-card h3{color:#fff;margin:0 0 12px;font-size:20px;}
+    .contact-panel p,.contact-card p{color:rgba(255,255,255,.64);line-height:1.75;}
+    .contact-panel .cta{display:inline-block;margin-top:12px;color:#fff;background:#4f8ef7;border-radius:999px;padding:12px 18px;text-decoration:none;font-weight:600;}
+    .section-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:18px;}
+    .section-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px;}
+    ul.clean{margin:0;padding-left:18px;color:rgba(255,255,255,.68);line-height:1.85;}
+    .section-title{margin:38px 0 10px;color:#fff;font-size:26px;}
+    .section-desc{color:rgba(255,255,255,.58);line-height:1.8;max-width:760px;}
+    @media (max-width:900px){.contact-hero,.section-grid,.section-grid-2{grid-template-columns:1fr;} .contact-hero h1{font-size:34px;}}
   </style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "name": "联系 BUMA",
-      "url": "https://buma.cc.cd/contact.html",
-      "description": "联系 BUMA，适合咨询一人公司官网转化、OpenClaw 部署、飞书接入、内容生产和客户承接。默认工作日 24 小时内回应。",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "BUMA",
-        "telephone": "+86-15550927555",
-        "areaServed": "CN",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+86-15550927555",
-          "contactType": "sales",
-          "availableLanguage": ["zh-CN"]
-        }
-      }
-    }
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "联系前最好准备什么？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "建议至少准备站点链接、最卡的页面或流程、报错截图或现有内容样例。信息越完整，越容易在 12 小时内拿到初步判断。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "多久会收到回应？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "默认工作日 24 小时内回应；如果信息完整，通常 12 小时内会先给到初步判断。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "适合直接联系的人群有哪些？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "已经有明确业务场景，想解决官网转化、内容承接、OpenClaw 部署、飞书接入或流程梳理问题的一人公司和小团队，更适合直接联系。"
-          }
-        }
-      ]
-    }
-  </script>
 </head>
 <body>
   <header class="topbar topbar-clean">
@@ -193,153 +41,106 @@
         <a href="solutions.html">解决方案</a>
         <a href="seo.html">文章</a>
         <a href="about.html">关于</a>
-        <a class="active" href="contact.html">联系</a>
+        <a href="contact.html" class="active">联系</a>
       </nav>
       <div class="nav-endcaps">
-        <span class="nav-signal">工作日 24h 内回应</span>
-        <a class="nav-cta" href="tel:15550927555">电话沟通</a>
+        <span class="nav-signal">山东临沂 · 远程可协作</span>
+        <a class="nav-cta" href="contact.html">预约咨询</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero hero-home hero-home-v2">
-      <div class="container hero-v2-grid">
-        <div class="hero-v2-copy">
-          <div class="hero-status-badge">
-            <span class="hero-status-dot" aria-hidden="true"></span>
-            先做适配判断，不先卖方案
-          </div>
-          <div class="eyebrow eyebrow-clean">Contact BUMA</div>
-          <h1 class="hero-v2-title">先把你最卡的 1 步发来，<br/>我先判断该不该现在聊。</h1>
-          <p class="section-desc hero-v2-desc">适合聊的一般是这几类：一人公司官网转化、内容承接、OpenClaw 部署、飞书接入、执行流程梳理。不是一上来讲大而全，而是先收敛成最值得先做的 1 页、1 条流程或 1 个接入动作。</p>
-          <div class="button-row hero-actions hero-v2-actions">
-            <a class="btn-primary" href="tel:15550927555">先打电话做 15 分钟适配判断</a>
-          </div>
-          <p class="contact-primary-note">微信：bm8150｜电话：15550927555｜坐标：山东临沂｜支持远程协作</p>
-          <ul class="contact-hero-meta">
-            <li>默认工作日 24 小时内回应</li>
-            <li>信息完整时通常 12 小时内初判</li>
-            <li>主线：官网转化 / OpenClaw / 飞书接入</li>
-          </ul>
-          <div class="contact-response-band">
-            <h3>发来之后，会怎么接？</h3>
-            <ul class="contact-response-list">
-              <li>带上站点链接、页面截图、报错信息或最卡的 1 步，会比空泛描述更快进入判断。</li>
-              <li>我会先回复：你现在最该先做什么，以及这件事是否适合现在继续聊。</li>
-              <li>如果适合继续推进，再进入 15 分钟适配判断，不做无准备的长沟通。</li>
-            </ul>
-          </div>
-        </div>
-        <div class="hero-v2-visual-wrap">
-          <img class="hero-v2-visual" src="assets-hero-main.jpg" alt="BUMA contact and consultation" />
-        </div>
+  <main class="contact-wrap">
+    <section class="contact-hero">
+      <div>
+        <div class="contact-badge">Contact BUMA</div>
+        <h1>先把你最卡的那一步发来，<br/>我先判断值不值得现在聊。</h1>
+        <p>如果你现在卡在官网转化、联系页承接、内容生产、OpenClaw 部署、飞书接入，别一上来讲一大堆背景。直接把最卡的那一步发来：一个页面链接、一张报错截图、一段现在跑不顺的流程，都行。先判断问题，再决定怎么推进。</p>
+        <ul class="contact-points">
+          <li>微信：bm8150</li>
+          <li>电话：15550927555</li>
+          <li>工作日 24 小时内回应</li>
+          <li>支持远程协作</li>
+        </ul>
       </div>
+      <aside class="contact-panel">
+        <h3>第一次联系，发这 4 样就够了</h3>
+        <ul class="clean">
+          <li>你的网站、页面或相关链接</li>
+          <li>你现在最卡的 1 个问题</li>
+          <li>你想达到的结果</li>
+          <li>如果有报错，直接发截图</li>
+        </ul>
+        <p>不用先整理成长文。信息够判断就行。我会先告诉你，最值得先动的是哪一步。</p>
+        <a class="cta" href="#wechat">现在加微信</a>
+      </aside>
     </section>
 
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-header center">
-          <div class="eyebrow">72-Hour Flow</div>
-          <h2 class="section-title">联系后，72 小时内通常这样推进</h2>
-          <p class="section-desc">先把节奏写清楚，比一句“尽快回复”更能降低咨询犹豫。</p>
-        </div>
-        <div class="grid-2">
-          <article class="card contact-step-card">
-            <div class="contact-step-kicker">5 分钟首触达</div>
-            <h3>先确认最卡的 1 步，不先急着卖</h3>
-            <p>第一句话通常会先确认你发来的页面、流程或报错点，目标是让你知道问题已经被接住，而不是立刻进入销售推进。</p>
-          </article>
-          <article class="card contact-step-card">
-            <div class="contact-step-kicker">24 小时案例跟进</div>
-            <h3>发最接近的案例或结构参考</h3>
-            <p>如果属于官网转化、内容承接、接入流程类问题，会优先发一份最接近的参考页面或文章，先建立判断依据。</p>
-          </article>
-          <article class="card contact-step-card">
-            <div class="contact-step-kicker">48 小时诊断推进</div>
-            <h3>给 2-3 个具体动作选项</h3>
-            <p>不会只说“可以聊聊”，而是明确：先改联系页、先补内容承接、先跑 OpenClaw 接入，还是先做一次完整诊断。</p>
-          </article>
-          <article class="card contact-step-card">
-            <div class="contact-step-kicker">72 小时转保温</div>
-            <h3>不急推，但不让关系断掉</h3>
-            <p>如果暂时不适合推进，会给一个更轻量的继续动作，比如先看哪篇文章、先补哪份资料、先完成哪一个页面判断。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container grid-2">
-        <article class="card contact-fit-card">
-          <h3>这几类情况，最适合现在直接联系</h3>
-          <ul class="contact-fit-list">
-            <li>网站已经有内容或流量，但联系页 / 首页 / 方案页承接不顺。</li>
-            <li>想把 OpenClaw、飞书、官网咨询入口接成一条能实际运行的链路。</li>
-            <li>已经在用 AI，但岗位边界、交接方式、执行流程还比较乱。</li>
-            <li>愿意先聚焦最小闭环：1 页、1 条流程、1 个推进动作。</li>
-          </ul>
+    <section>
+      <h2 class="section-title">适合找我聊的，通常是这几类</h2>
+      <p class="section-desc">核心不是“我会很多”，而是你现在确实有一个卡点，需要有人帮你快速收敛优先级、判断先做哪里最划算。</p>
+      <div class="section-grid">
+        <article class="contact-card">
+          <div class="mini-kicker">01</div>
+          <h3>官网有流量，但不转化</h3>
+          <p>首页、解决方案页、FAQ、联系页都做了，但访客看完还是不知道下一步该干什么。</p>
         </article>
-        <article class="card contact-resource-card">
-          <h3>联系前建议先准备这些信息</h3>
-          <ul class="contact-resource-list">
-            <li>网站地址 / 页面链接 / 飞书群背景 / 当前业务场景。</li>
-            <li>如果是接入或部署问题，尽量带上报错截图、日志关键行、系统环境。</li>
-            <li>如果是内容与官网问题，尽量说明目标客户、主营业务、最想提升的转化动作。</li>
-            <li>一句话说清：你现在最卡的是哪 1 步。</li>
-          </ul>
+        <article class="contact-card">
+          <div class="mini-kicker">02</div>
+          <h3>内容发了不少，但承接不顺</h3>
+          <p>文章、短内容、案例有了，可真正愿意咨询的人并不多，入口和引导链路没有接起来。</p>
+        </article>
+        <article class="contact-card">
+          <div class="mini-kicker">03</div>
+          <h3>AI 工具装了，但业务没跑顺</h3>
+          <p>OpenClaw、飞书、表单、跟进流程各做了一点，可它们之间还是断的，执行效率提不上来。</p>
         </article>
       </div>
     </section>
 
-    <section class="section section-soft">
-      <div class="container grid-2">
-        <article class="card contact-proof-card">
-          <h3>如果你还没准备好直接联系，可以先看这 3 篇</h3>
-          <ul class="contact-proof-list">
-            <li><a class="contact-muted-link" href="seo-20260327-1307-one-person-company-contact-page-conversion.html">一人公司官网咨询页高转化结构</a>：先判断联系页是不是还停留在“留个联系方式”。</li>
-            <li><a class="contact-muted-link" href="seo-20260328-0302-one-person-company-response-time-estimate.html">预计回复时间怎么写</a>：先补清咨询预期管理。</li>
-            <li><a class="contact-muted-link" href="seo-20260322-1007-one-person-company-contact-thank-you-page.html">咨询提交后成功页怎么写</a>：把提交后的承接继续接住。</li>
-          </ul>
+    <section>
+      <h2 class="section-title">联系后会发生什么</h2>
+      <p class="section-desc">不玩虚的，第一次联系后的节奏直接写清楚，减少不确定感。</p>
+      <div class="section-grid">
+        <article class="contact-card">
+          <div class="mini-kicker">5 分钟首触达</div>
+          <h3>先确认你卡在哪</h3>
+          <p>第一句话先围绕你发来的页面、截图或流程，不先急着推销。</p>
         </article>
-        <article class="card contact-faq-card">
-          <h3>常见问题</h3>
-          <p><strong>多久会收到回应？</strong><br />默认工作日 24 小时内回应；如果信息完整，通常 12 小时内会先给到一版初步判断。</p>
-          <p><strong>适合先发什么？</strong><br />最有效的是：链接 + 截图 + 目标 + 当前最卡的 1 步。</p>
-          <p><strong>如果现在还不适合合作呢？</strong><br />也没关系，会直接告诉你先看哪篇文章、先补哪份资料或先做哪个最小动作。</p>
+        <article class="contact-card">
+          <div class="mini-kicker">24 小时内</div>
+          <h3>给你最接近的参考</h3>
+          <p>如果问题明确，我会直接回一份更接近你场景的页面、案例或结构建议。</p>
+        </article>
+        <article class="contact-card">
+          <div class="mini-kicker">48 小时内</div>
+          <h3>给出 2-3 个推进选项</h3>
+          <p>比如先改联系页、先做 FAQ、先补内容承接，或者先处理 OpenClaw / 飞书接入。</p>
         </article>
       </div>
     </section>
 
-    <section class="section cta-home">
-      <div class="container cta-wrap-home">
-        <div class="cta-copy">
-          <div class="eyebrow">Ready</div>
-          <h2 class="section-title">先把最卡的 1 步发来，再决定要不要继续推进</h2>
-          <p>可以是页面链接、报错截图、飞书场景、内容样例，或者一句你现在最卡的问题。我先帮你判断应该从哪一步开始。</p>
-        </div>
-        <div class="cta-actions">
-          <a class="btn-primary" href="tel:15550927555">现在电话沟通</a>
-          <div class="cta-meta">
-            <span>微信：bm8150</span>
-            <span>信息完整时，通常更快进入判断</span>
-          </div>
-        </div>
+    <section>
+      <h2 class="section-title">不适合直接来聊的情况，我也会直说</h2>
+      <div class="section-grid-2">
+        <article class="contact-card">
+          <h3>适合现在聊</h3>
+          <ul class="clean">
+            <li>你已经有站点、页面、内容或执行链路，想先把最关键的一步跑顺</li>
+            <li>你不想再听空方案，想要更具体的页面级、流程级判断</li>
+            <li>你接受先做最小闭环，不是一上来就推倒重做</li>
+          </ul>
+        </article>
+        <article class="contact-card">
+          <h3>暂时不适合现在聊</h3>
+          <ul class="clean">
+            <li>只是泛泛了解，还没有明确问题或目标</li>
+            <li>想一次性打包所有事情，但又没有优先级</li>
+            <li>只想听有没有捷径，不愿意先解决眼前的真实卡点</li>
+          </ul>
+        </article>
       </div>
     </section>
   </main>
-
-  <div class="mobile-quick-bar">
-    <a href="tel:15550927555">电话咨询</a>
-    <a href="seo.html">看文章</a>
-    <a href="index.html">回首页</a>
-  </div>
-
-  <footer class="footer">
-    <div class="container footer-line">
-      <span>buma</span>
-      <span>先判断值不值得聊，再决定怎么推进</span>
-    </div>
-  </footer>
 </body>
 </html>

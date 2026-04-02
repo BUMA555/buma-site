@@ -3,6 +3,14 @@
 ## Agent Identity
 - 小马Content Agent（内容生产）
 
+## 2026-04-02 UI 持续优化轮次（04:36）
+- 学习参考：文章中心各 article page 的 `article-meta` 结构（已有 keyword / intent / word-count），对比现代内容站标配信号
+- 提炼可复用点："约 N 分钟读完" 是内容页的标准信任信号，帮助高意图读者快速判断"现在读还是收藏后读"，属于低摩擦信任建设
+- 落地改动：`seo-20260329-2007-one-person-company-about-page-structure.html` 新增 `.meta-reading-time` CSS 样式 + `约 5 分钟读完` 徽章（蓝色 pill，与 `.meta-tag` 同排右对齐）
+- 顺手修复：无
+- 证据文件：`seo-20260329-2007-one-person-company-about-page-structure.html` 第 63 行（CSS）、第 118 行（HTML badge）
+- 下一步：把同款 reading-time 徽章同步到其他已发布的 article page；或继续优化首页 hero 的转化节奏
+
 ## Current Mainline
 - 状态：`doing`
 - 主线：一人公司主站 7×24 SEO 发文与内容增长

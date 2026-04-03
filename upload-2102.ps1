@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Continue"
 $token = (gh auth token 2>$null).Trim()
-$workDir = "C:\Users\Administrator\.openclaw\workspace-content-agent\site-draft"
+$workDir = "D:\OpenClaw\projects\yiren-site\site-draft"
 
 function Upload-File($filePath) {
     $localPath = Join-Path $workDir $filePath

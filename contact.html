@@ -20,7 +20,23 @@
     .contact-badge,.mini-kicker{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#7eb6ff;}
     .contact-points{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;padding:0;list-style:none;}
     .contact-points li{padding:8px 12px;border:1px solid rgba(255,255,255,.08);border-radius:999px;background:rgba(255,255,255,.04);font-size:13px;color:rgba(255,255,255,.74);}
+    .contact-expectation{margin-top:18px;padding:14px 16px;border:1px solid rgba(126,182,255,.22);border-radius:16px;background:linear-gradient(180deg,rgba(126,182,255,.1),rgba(126,182,255,.04));color:rgba(255,255,255,.78);font-size:14px;line-height:1.7;}
+    .contact-expectation strong{color:#fff;}
+    .contact-route-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px;}
+    .contact-route-card{padding:14px 14px 15px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.03);}
+    .contact-route-card strong{display:block;color:#fff;font-size:15px;margin-bottom:6px;}
+    .contact-route-card span{display:block;color:rgba(255,255,255,.64);font-size:13px;line-height:1.7;}
     .contact-panel,.contact-card{background:#111827;border:1px solid #1f2a44;border-radius:18px;padding:22px;}
+    .trust-proof-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:16px;margin-top:18px;}
+    .trust-proof-card{background:linear-gradient(180deg,rgba(17,24,39,.96),rgba(11,15,26,.96));border:1px solid rgba(126,182,255,.14);border-radius:20px;padding:24px;}
+    .trust-proof-card h3{color:#fff;margin:0 0 12px;font-size:22px;}
+    .trust-proof-card p{color:rgba(255,255,255,.68);line-height:1.8;margin:0;}
+    .proof-list{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:12px;}
+    .proof-list li{padding:14px 16px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.03);color:rgba(255,255,255,.72);line-height:1.7;}
+    .proof-list strong{display:block;color:#fff;margin-bottom:4px;}
+    .proof-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+    .proof-links a{display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border-radius:999px;border:1px solid rgba(126,182,255,.24);background:rgba(126,182,255,.08);color:#dbeafe;text-decoration:none;font-size:14px;}
+    .proof-links a:hover{border-color:rgba(126,182,255,.42);background:rgba(126,182,255,.14);}
     .contact-panel h3,.contact-card h3{color:#fff;margin:0 0 12px;font-size:20px;}
     .contact-panel p,.contact-card p{color:rgba(255,255,255,.64);line-height:1.75;}
     .contact-panel .cta{display:inline-block;margin-top:12px;color:#fff;background:#4f8ef7;border-radius:999px;padding:12px 18px;text-decoration:none;font-weight:600;}
@@ -29,7 +45,8 @@
     ul.clean{margin:0;padding-left:18px;color:rgba(255,255,255,.68);line-height:1.85;}
     .section-title{margin:38px 0 10px;color:#fff;font-size:26px;}
     .section-desc{color:rgba(255,255,255,.58);line-height:1.8;max-width:760px;}
-    @media (max-width:900px){.contact-hero,.section-grid,.section-grid-2{grid-template-columns:1fr;} .contact-hero h1{font-size:34px;}}
+    @media (max-width:900px){.contact-hero,.section-grid,.section-grid-2,.trust-proof-grid{grid-template-columns:1fr;} .contact-hero h1{font-size:34px;}}
+    @media (max-width:680px){.contact-route-grid{grid-template-columns:1fr;}}
   </style>
 </head>
 <body>
@@ -54,26 +71,76 @@
     <section class="contact-hero">
       <div>
         <div class="contact-badge">Contact BUMA</div>
-        <h1>先把你最卡的那一步发来，<br/>我先判断值不值得现在聊。</h1>
+        <h1>先把你最卡的那一步发来，<br/>我先做 15 分钟适配判断。</h1>
         <p>如果你现在卡在官网转化、联系页承接、内容生产、OpenClaw 部署、飞书接入，别一上来讲一大堆背景。直接把最卡的那一步发来：一个页面链接、一张报错截图、一段现在跑不顺的流程，都行。先判断问题，再决定怎么推进。</p>
+        <div class="contact-expectation"><strong>先发这 3 样就够了：</strong>页面或链接、相关截图、你现在最卡的 1 步。<strong>不用先写成长文，我会先用 15 分钟做适配判断，并在工作日 24 小时内告诉你下一步该先动哪里。</strong></div>
+        <div class="contact-route-grid" aria-label="联系分流">
+          <div class="contact-route-card">
+            <strong>官网转化卡住</strong>
+            <span>发首页、解决方案页、FAQ 或联系页链接，我先帮你判断最该先改哪 1 页。</span>
+          </div>
+          <div class="contact-route-card">
+            <strong>内容发了但承接弱</strong>
+            <span>发 1 篇文章或内容入口，我先看是 CTA、模块顺序还是分流逻辑出了问题。</span>
+          </div>
+          <div class="contact-route-card">
+            <strong>OpenClaw 部署没跑顺</strong>
+            <span>发当前报错、节点状态或部署截图，我先判断是连接、流程还是配置卡住。</span>
+          </div>
+          <div class="contact-route-card">
+            <strong>飞书接入断在半路</strong>
+            <span>发你现在做到哪一步、哪条消息没接上，我先帮你定位是权限、流程还是承接问题。</span>
+          </div>
+        </div>
         <ul class="contact-points">
           <li>微信：bm8150</li>
           <li>电话：15550927555</li>
+          <li>15 分钟先判断值不值得聊</li>
           <li>工作日 24 小时内回应</li>
           <li>支持远程协作</li>
         </ul>
       </div>
-      <aside class="contact-panel">
-        <h3>第一次联系，发这 4 样就够了</h3>
+      <aside class="contact-panel" id="wechat">
+        <h3>先发这 3 样，就能开始 15 分钟适配判断</h3>
         <ul class="clean">
           <li>你的网站、页面或相关链接</li>
-          <li>你现在最卡的 1 个问题</li>
-          <li>你想达到的结果</li>
-          <li>如果有报错，直接发截图</li>
+          <li>如果有报错或卡点，直接发截图</li>
+          <li>你现在最卡的 1 步</li>
         </ul>
-        <p>不用先整理成长文。信息够判断就行。我会先告诉你，最值得先动的是哪一步。</p>
-        <a class="cta" href="#wechat">现在加微信</a>
+        <p>不用先整理成长文，也不会在首触达阶段直接推销。信息够判断就行，我会先告诉你最值得先动的是哪一步，以及为什么；如果方向不适合，也会直接告诉你别先浪费时间。</p>
+        <a class="cta" href="contact.html#wechat">把当前卡点发来</a>
       </aside>
+    </section>
+
+    <section>
+      <h2 class="section-title">如果你担心“联系了也只是空聊”，先看这 3 类可核对信号</h2>
+      <p class="section-desc">这轮吸收了 Linear Enterprise 的“先给运行层面的可信信号”与 Stripe Contact Sales 的“先降低首次接触不确定感”写法，把联系页从“能发消息”往“更敢发第一条消息”推进一步。</p>
+      <div class="trust-proof-grid">
+        <article class="trust-proof-card">
+          <h3>先给证据，再让你决定要不要发第一条</h3>
+          <p>不是只说“欢迎咨询”。如果你正在判断这次联系值不值得，可以先看本站已经公开可核对的页面与承接结构，再决定是否把当前卡点发来。</p>
+          <ul class="proof-list">
+            <li><strong>解决方案页已收成单一主 CTA</strong>不是并排堆多个出口，而是统一导向“预约 15 分钟适配判断”，减少首屏分心。</li>
+            <li><strong>About 页已把运行信号前置</strong>不是只讲品牌故事，而是直接写清当前在跑什么、适合谁来、哪些情况暂时不适合。</li>
+            <li><strong>文章中心持续补高意图内容</strong>FAQ、承接、OpenClaw 工作流、官网转化路径都已拆成独立入口，方便你先自查再联系。</li>
+          </ul>
+          <div class="proof-links">
+            <a href="solutions.html">看解决方案承接 →</a>
+            <a href="about.html#operating-signals">看 About 运行信号 →</a>
+            <a href="seo.html">看文章中心入口 →</a>
+          </div>
+        </article>
+        <aside class="contact-card">
+          <div class="mini-kicker">Before You Reach Out</div>
+          <h3>更容易拿到有效判断的发法</h3>
+          <ul class="clean">
+            <li>不要只发“想了解一下”，尽量带 1 个真实页面或流程。</li>
+            <li>不要一次抛 10 个问题，先发你现在最卡的那 1 步。</li>
+            <li>如果你拿不准优先级，也可以直接说“我只想先判断该改首页、联系页还是流程接入”。</li>
+          </ul>
+          <p>这样做的目的不是提高门槛，而是让第一次来回就能更快进入有效判断，而不是陷入泛聊。</p>
+        </aside>
+      </div>
     </section>
 
     <section>
@@ -100,22 +167,22 @@
 
     <section>
       <h2 class="section-title">联系后会发生什么</h2>
-      <p class="section-desc">不玩虚的，第一次联系后的节奏直接写清楚，减少不确定感。</p>
+      <p class="section-desc">参考 Stripe Contact Sales 的预期管理写法，把首次联系后的节奏直接写清楚；同时沿用本站已确认的四段式私域承接 SOP，让首触达、跟进、诊断都更像真实商业站的流程，而不是泛泛欢迎咨询。</p>
       <div class="section-grid">
         <article class="contact-card">
           <div class="mini-kicker">5 分钟首触达</div>
-          <h3>先确认你卡在哪</h3>
-          <p>第一句话先围绕你发来的页面、截图或流程，不先急着推销。</p>
+          <h3>先确认你卡在哪，不先做销售</h3>
+          <p>第一句话只围绕你发来的页面、截图或流程，确认你现在最卡的是页面承接、内容转化，还是 OpenClaw / 飞书接入，不在首触达阶段直接推销。</p>
         </article>
         <article class="contact-card">
-          <div class="mini-kicker">24 小时内</div>
-          <h3>给你最接近的参考</h3>
-          <p>如果问题明确，我会直接回一份更接近你场景的页面、案例或结构建议。</p>
+          <div class="mini-kicker">24 小时案例跟进</div>
+          <h3>回你更接近的页面或真实参考</h3>
+          <p>如果问题明确，会优先给你最接近场景的页面结构、案例、FAQ 入口或流程参考，先建立判断依据，而不是只给抽象建议。</p>
         </article>
         <article class="contact-card">
-          <div class="mini-kicker">48 小时内</div>
-          <h3>给出 2-3 个推进选项</h3>
-          <p>比如先改联系页、先做 FAQ、先补内容承接，或者先处理 OpenClaw / 飞书接入。</p>
+          <div class="mini-kicker">48 小时诊断推进</div>
+          <h3>给你 2–3 个下一步选项</h3>
+          <p>例如先改联系页承接、先补 FAQ 出口、先接 OpenClaw / 飞书最小链路；把优先级直接列出来，让你选最值得先动的一步。</p>
         </article>
       </div>
     </section>

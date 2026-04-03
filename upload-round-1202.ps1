@@ -9,7 +9,7 @@ $files = @(
     "seo.html"
 )
 
-$workDir = "C:\Users\Administrator\.openclaw\workspace-content-agent\site-draft"
+$workDir = "D:\OpenClaw\projects\yiren-site\site-draft"
 
 $token = (gh auth token 2>$null).Trim()
 if (-not $token) { throw "No GH token" }

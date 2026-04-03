@@ -1,7 +1,7 @@
 # Upload about.html and styles.css to GitHub
 # REPO: BUMA555/buma-site
 $ErrorActionPreference = 'Stop'
-$workDir = "C:\Users\Administrator\.openclaw\workspace-content-agent\site-draft"
+$workDir = "D:\OpenClaw\projects\yiren-site\site-draft"
 $owner = "BUMA555"
 $repo = "buma-site"
 

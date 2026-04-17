@@ -1,32 +1,175 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://buma55.com/</loc>
-    <lastmod>2026-04-09</lastmod>
+    <loc>https://1r.buma55.com/</loc>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://buma55.com/about.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <loc>https://1r.buma55.com/about.html</loc>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://buma55.com/solutions.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <loc>https://1r.buma55.com/solutions.html</loc>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://buma55.com/contact.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://1r.buma55.com/contact.html</loc>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://buma55.com/seo.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://1r.buma55.com/seo-20260412-2011-ai-help-center-content-gap-failed-search-faq-self-service-resolution-one-person-company-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260412-1317-ai-website-transparency-explainability-one-person-company-trust-conversion-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260412-1224-ai-conversion-copywriting-one-person-company-dynamic-landing-page-guide.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260412-1112-ai-agent-handoff-human-escalation-website-trust-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260412-0806-ai-feedback-policy-bug-report-training-exception-contact-page-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260412-0704-ai-subprocessor-disclosure-third-party-ai-processing-website-trust-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260412-0606-ai-data-deletion-request-delete-path-contact-page-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260412-0509-ai-data-retention-policy-no-ai-training-contact-page-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260412-0306-ai-agent-personalization-engine-adaptive-website-conversion-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260412-0016-ai-agent-trust-safety-website-operator-computer-use-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-2227-ai-agent-to-agent-communication-a2a-mcp-website-conversion-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-2007-ai-agent-identification-standard-agent-friendly-website-conversion-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-1944-ai-agent-observability-monitoring-agent-friendly-analytics-website-conversion-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-1803-ai-agent-multi-agent-orchestration-handoff-website-conversion-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-1227-ai-agent-session-memory-context-persistence-state-recovery-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-1102-ai-agent-timeout-retry-error-handling-agent-safe-website-conversion-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-1005-ai-agent-approval-workflow-human-in-the-loop-website-conversion-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-0902-ai-agent-thank-you-confirmation-response-time-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-0704-ai-voice-agent-contact-page-faq-response-time-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-0604-ai-agent-checkout-agent-safe-pricing-confirmation-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-0502-ai-browser-agent-ready-contact-faq-offer-page-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>  <url>
+    <loc>https://1r.buma55.com/seo-20260411-0404-agentic-web-one-person-company-transactable-website-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-0202-ai-cowork-one-person-company-ai-workflow-landing-page-guide.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260411-0342-ai-agent-execute-one-person-company-ai-workflow-landing-page-seo.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo.html</loc>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -1723,9 +1866,40 @@
     <priority>0.88</priority>
   </url>
   <url>
+    <loc>https://1r.buma55.com/seo-20260412-1511-ai-customer-service-knowledge-base-one-person-company-faq-help-center-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260412-1618-ai-help-center-homepage-self-service-resolution-one-person-company-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260412-1905-ai-customer-service-sla-kpi-self-service-resolution-one-person-company-seo.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260413-0205-ai-customer-service-response-time-sla-first-response-time-one-person-company-seo.html</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://1r.buma55.com/seo-20260413-0009-ai-customer-service-autoresponder-out-of-hours-response-one-person-company-seo.html</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
     <loc>https://buma55.com/seo-20260410-2314-claude-cowork-ai-coworkers-enterprise-workflow-news.html</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>
+
